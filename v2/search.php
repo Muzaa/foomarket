@@ -75,6 +75,10 @@ Price / Hour
 Deposit
 </th>
 
+<th>
+Option
+</th>
+
 </thead>
 
 <?php
@@ -108,6 +112,10 @@ $mark = true;
 
 <td>
 <?php echo $data['Deposit'] ?>
+</td>
+
+<td>
+<a href="rent.php?id=$data[iid]">Click To Rent This Item</a>
 </td>
 
 </tr>

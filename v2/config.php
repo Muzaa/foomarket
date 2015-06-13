@@ -1,6 +1,6 @@
 <?php
 
- mysql_connect("localhost","root","12321aa");
+ mysql_connect("localhost","foorental","12321aa");
  mysql_selectdb("foorental");
   // session_start();
 
