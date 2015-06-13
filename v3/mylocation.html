@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+<style>
+	html,
+body,
+#google_canvas {
+	height:100%;
+}
+#google_canvas h1 {
+	font-size:16px;
+}
+#google_canvas h2 {
+	font-size:14px;
+	font-weight:300;
+}
+</style>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta name="author" content="@toddmotto">
+
+	</head>
+	<body>
+
+		<div id="google_canvas"></div>
+	
+		<script src="//maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+	
+	    <script>
+	    (function() {
+	    
+	    	if(!!navigator.geolocation) {
+	    	
+	    		var map;
+	    	
+		    	var mapOptions = {
+		    		zoom: 18,
+		    		mapTypeId: google.maps.MapTypeId.ROADMAP
+		    	};
+		    	
+		    	map = new google.maps.Map(document.getElementById('google_canvas'), mapOptions);
+	    	
+	    		navigator.geolocation.getCurrentPosition(function(position) {
+	    		
+		    		var geolocate = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+		    		
+		    		var infowindow = new google.maps.InfoWindow({
+		    			map: map,
+		    			position: geolocate,
+		    			content:
+		    				'<h1>Your Item</h1>' 
+		    		});
+		    		
+		    		map.setCenter(geolocate);
+		    		
+	    		});
+	    		
+	    	} else {
+	    		document.getElementById('google_canvas').innerHTML = 'No Geolocation Support.';
+	    	}
+	    	
+	    })();
+	    </script>
+	
+
+	</body>
+</html>

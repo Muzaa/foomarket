@@ -13,37 +13,32 @@
 
             <h2 id="Note"></h2>
             <div class="contactform">
-            <form class="cmxform" id="add1" enctype="multipart/form-data"  method="post" action="addprocess.php">
+            <form class="cmxform" id="add1" enctype="multipart/form-data"  onsubmit="copylatlong()" method="post" action="addprocess.php">
               
+               <iframe src="mylocation.html" width="100%" height="200" frameborder="0" style="border:0"></iframe> 
+      <br>
+           <div class="clear"></div>
+            <label>Upload Picture:</label>
               <img  id="blah" src="images/icons/black/photos.png" alt="Take Picture!"  />
               
                     <input type="file" id="imgInp"  name="userfile" accept="image/*;capture=camera">
-                            <script>
-        function readURL(input) {
-    if (input.files && input.files[0]) { 
-        var reader = new FileReader();
-
-        reader.onload = function (e) {
-            $('#blah').attr('src', e.target.result);
-        }
-
-        reader.readAsDataURL(input.files[0]);
-    }
-}
-
-$("#imgInp").change(function(){
-  alert("ok"),
-    readURL(this);
-});
-       </script> 
+                      
+      
+        
+              <input type="hidden" id="latadd" name="latadd" value="" class="form_input required" />
+                <input type="hidden" id="longadd" name="longadd" value="" class="form_input required" />
+                             
+                             
             <label>Description:</label>
-            <input type="text" name="description" value="" class="form_input required" />
+            <input type="text" name="Description" value="" class="form_input required" />
             <label>Rate per hour [USD]:</label>
-            <input type="text" name="rate" value="" placeholder="how much per hour?" class="form_input required" />
+            <input type="text" name="Rate" value="" placeholder="how much per hour?" class="form_input required" />
             <label>Deposit (if any) [USD]:</label>
-            <input type="text" name="deposit" value="0" class="form_input required" />
+            <input type="text" name="Deposit" value="0" class="form_input required" />
             <input type="submit" name="submit" class="form_submit" id="submit" value="Send" />
             <label id="loader" style="display:none;"><img src="images/loader.gif" alt="Loading..." id="LoadingGraphic" /></label>
+            
+            <input type='hidden' name='' value=''>
             </form>
             </div>
             

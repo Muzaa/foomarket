@@ -15,6 +15,14 @@
 </head>
 <body id="mobile_wrap">
 
+
+
+    
+    
+
+         
+                        
+                        
     <div class="statusbar-overlay"></div>
 
     <div class="panel-overlay"></div>
@@ -22,7 +30,7 @@
     <div class="panel panel-right panel-cover">
               <nav class="list-nav">
                 <ul>
-                  <li class="home-icon"><a href="index.html" class="close-panel">Home</a></li>
+                  <li class="home-icon"><a href="index.php" class="close-panel">Home</a></li>
                   <li class="about-icon"><a href="about.html" class="close-panel">My Account</a></li>
                   <li class="search-icon"><a href="find.php" class="close-panel">Find and Rent!</a></li>
                   <li class="photos-icon"><a href="add.php" class="close-panel">Rent Your Stuff</a></li>
@@ -30,6 +38,8 @@
                   <li class="blog-icon"><a href="blog.html" class="close-panel">Messaging</a></li>
                   <li class="logout-icon"><a href="contact.html" class="close-panel">Logout</a></li>
                 </ul>
+                
+                
               </nav>  
     </div>
 
@@ -58,6 +68,8 @@
                     <div class="swiper-wrapper">
                     
                       <div class="swiper-slide">
+                        
+                    
                           <span><br>fooRental.com</span>
                           <span class="subtitle">Need a hand? <br> Earn extra cash!</span>
                           
@@ -101,6 +113,10 @@
     <div class="popup popup-login">
     <div class="content-block">
       <h4>Login</h4>
+                  <input type="hidden" id="Lat" name="Description" value="101"  >
+            <input type="hidden" id="Long" name="Description" value="10"  >
+                
+                
             <div class="loginform">
             <form id="LoginForm" method="post">
             <label>Username:</label>
@@ -138,6 +154,52 @@
 <script type="text/javascript" src="js/jquery.fitvids.js"></script>
 <script type="text/javascript" src="js/email.js"></script>
 
+
+
+                
+   <script>
+                                var $ = jQuery;
+ $(function() {
+
+        var Geo={};
+
+        if (navigator.geolocation) {
+           navigator.geolocation.getCurrentPosition(success, error);
+        }
+
+        //Get the latitude and the longitude;
+        function success(position) {
+            Geo.lat = position.coords.latitude;
+            Geo.lng = position.coords.longitude;
+            populateHeader(Geo.lat, Geo.lng);
+        }
+
+        function error(){
+            console.log("Geocoder failed");
+        }
+
+        function populateHeader(lat, lng){
+         $('#Lat').val(lat);
+        $('#Long').val(lng);
+          // alert(lat);
+        }
+
+    });
+
+    
+    
+                   function copylatlong() {
+                    //code
+                   
+                          document.getElementById("latadd").value = document.getElementById("Lat").value;
+                          document.getElementById("longadd").value = document.getElementById("Long").value;
+                          //return false;
+                   }
+                    
+       </script>
+                            
+
+                            
 
   </body>
 </html>
