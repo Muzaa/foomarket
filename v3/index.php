@@ -113,8 +113,8 @@
     <div class="popup popup-login">
     <div class="content-block">
       <h4>Login</h4>
-                  <input type="hidden" id="Lat" name="Description" value="101"  >
-            <input type="hidden" id="Long" name="Description" value="10"  >
+                  <input type="hidden" id="Lat" name="Description" value="3.0661236000000005"  >
+            <input type="hidden" id="Long" name="Description" value="101.60513209999999"  >
                 
                 
             <div class="loginform">

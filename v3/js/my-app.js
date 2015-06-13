@@ -18,6 +18,14 @@ var mainView = myApp.addView('.view-main', {
     dynamicNavbar: false,
 });
 $$(document).on('pageInit', function (e) {
+    
+    
+    
+    $("#foofind").click(function(event){
+               $('#fooresult').load('findresult.php?q=' +  encodeURIComponent($("#foostuff").val()) + "&lat=" + $("#Lat").val() + "&long=" + $("#Long").val() );
+            });
+    
+    
   		$(".swipebox").swipebox();
 		$(".videocontainer").fitVids();
 		
