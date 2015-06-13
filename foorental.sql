@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jun 13, 2015 at 07:47 AM
+-- Generation Time: Jun 13, 2015 at 08:41 AM
 -- Server version: 5.1.36
 -- PHP Version: 5.3.0
 
@@ -27,18 +27,26 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 
 CREATE TABLE IF NOT EXISTS `inventory` (
   `iid` int(11) NOT NULL AUTO_INCREMENT,
+  `userid` int(11) NOT NULL,
   `Description` text NOT NULL,
   `Rate` int(11) NOT NULL,
   `Deposit` int(11) NOT NULL,
   `latitude` decimal(9,6) NOT NULL,
   `longitude` decimal(9,6) NOT NULL,
   PRIMARY KEY (`iid`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
 
 --
 -- Dumping data for table `inventory`
 --
 
+INSERT INTO `inventory` (`iid`, `userid`, `Description`, `Rate`, `Deposit`, `latitude`, `longitude`) VALUES
+(1, 1, 'Hammer', 5, 0, '3.065919', '101.605088'),
+(2, 1, 'Drill', 10, 50, '3.065919', '101.605088'),
+(3, 1, 'Ladder', 15, 50, '3.065919', '101.605088'),
+(4, 3, 'Knife', 5, 0, '3.066774', '101.604528'),
+(5, 3, 'Drill', 10, 200, '3.066774', '101.604528'),
+(6, 3, 'Screw Driver', 2, 0, '3.066774', '101.604528');
 
 -- --------------------------------------------------------
 
@@ -82,12 +90,6 @@ CREATE TABLE IF NOT EXISTS `rating` (
 -- Dumping data for table `rating`
 --
 
-INSERT INTO `rating` (`sellid`, `star`, `review`, `buyer`, `seller`) VALUES
-('1', 4, 'Delicious,superb..', 'dicky@mncsb.com', 'shafiq@mncsb.com'),
-('2', 5, 'cannot find around the city.Only at dicky''s house ..ori and cheap..', 'dicky@mncsb.com', 'shafiq@mncsb.com'),
-('3', 1, 'Very hot..I couldnt eat this sh***.Such waste of money!!!', 'dicky@mncsb.com', 'shafiq@mncsb.com'),
-('4', 5, 'choc indulgence my favourite. glad i''m near to the house\r\n', 'dicky@mncsb.com', 'shafiq@mncsb.com'),
-('5', 4, 'Finally,taste one last night..after waited for so long..great!!', 'dicky@mncsb.com', 'shafiq@mncsb.com');
 
 -- --------------------------------------------------------
 
@@ -98,18 +100,22 @@ INSERT INTO `rating` (`sellid`, `star`, `review`, `buyer`, `seller`) VALUES
 CREATE TABLE IF NOT EXISTS `rental` (
   `rid` int(11) NOT NULL AUTO_INCREMENT,
   `Description` varchar(255) NOT NULL,
-  `userid` int(11) NOT NULL,
-  `Address` varchar(255) NOT NULL,
+  `InventoryID` int(11) NOT NULL,
+  `Owner` int(11) NOT NULL,
+  `Renter` int(11) NOT NULL,
   `Duration` varchar(255) NOT NULL,
   `Photoproof` blob NOT NULL,
   `Comment` varchar(255) NOT NULL,
   PRIMARY KEY (`rid`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `rental`
 --
 
+INSERT INTO `rental` (`rid`, `Description`, `InventoryID`, `Owner`, `Renter`, `Duration`, `Photoproof`, `Comment`) VALUES
+(1, 'Rent for 1 day', 1, 1, 2, '1', '', '-'),
+(2, 'test desc', 4, 3, 2, '3', '', 'test ');
 
 -- --------------------------------------------------------
 
@@ -124,11 +130,13 @@ CREATE TABLE IF NOT EXISTS `user` (
   `Email` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   PRIMARY KEY (`uid`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `user`
 --
 
 INSERT INTO `user` (`uid`, `Name`, `Phone`, `Email`, `password`) VALUES
-(1, '', '', '', '');
+(1, 'Dicky', '0125947168', 'dicky@mncsb.com', '1234'),
+(2, 'Muza', '1234566', 'muza@mncsb.com', '1234'),
+(3, 'John', '12345', 'john', '1234');
