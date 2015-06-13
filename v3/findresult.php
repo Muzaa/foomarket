@@ -78,7 +78,7 @@ $qid = mysql_query("select * from inventory a , user b where a.userid = b.uid AN
 	   <br>
 		Item Distance : <?php echo round($meters ,2) ?> Meters
 	  </p>
-          <a href="photos.html" class="button_small">$<?php echo $fooitem[$key]['Rate'];?> per hour
+          <span style='font-size:20pt'>$<?php echo $fooitem[$key]['Rate'];?> per hour </span> <a style='float:right' href="rent.php?id=<?php echo $key;?>" class="button_small">Click to rent!
 	  
 	 </a>
           </div>
