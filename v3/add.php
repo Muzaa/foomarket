@@ -15,8 +15,8 @@
             <div class="contactform">
             <form class="cmxform" id="add1" enctype="multipart/form-data"  onsubmit="copylatlong()" method="post" action="addprocess.php">
               
-               <iframe src="mylocation.html" width="100%" height="200" frameborder="0" style="border:0"></iframe> 
-      <br>
+              <!-- <iframe src="mylocation.html" width="100%" height="200" frameborder="0" style="border:0"></iframe> 
+      <br>-->
            <div class="clear"></div>
             <label>Upload Picture:</label>
               <img  id="blah" src="images/icons/black/photos.png" alt="Take Picture!"  />
