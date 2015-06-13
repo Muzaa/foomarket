@@ -322,6 +322,20 @@ background-size: auto 40%;
 background-repeat: no-repeat;
 background-position: 10px 50%;
 }
+
+.search-icon{
+background:url(images/icons/white/search.png);
+background-size: auto 50%;
+background-repeat: no-repeat;
+background-position: 10px 50%;
+}
+
+.cart-icon{
+background:url(images/icons/white/cart.png);
+background-size: auto 50%;
+background-repeat: no-repeat;
+background-position: 10px 50%;
+}
 /*===============================================*/
 /* 5. TOP NAVIGATION BAR AND FOOTER TOOLBAR */
 /*===============================================*/
