@@ -71,7 +71,7 @@
                         
                     
                           <span><br>fooRental.com</span>
-                          <span class="subtitle">Need a hand? <br> Earn extra cash!</span>
+                          <span class="subtitle">Need something? <br> Save Money, Earn extra cash!</span>
                           
                           <a href="find.php" class="swiper_read_more">swipe to see more</a>                      </div>
                       <div class="swiper-slide">
