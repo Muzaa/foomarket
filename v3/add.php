@@ -13,7 +13,7 @@
 
             <h2 id="Note"></h2>
             <div class="contactform">
-            <form class="cmxform" id="additem" enctype="multipart/form-data"  method="post" action="addprocess.php">
+            <form class="cmxform" id="add1" enctype="multipart/form-data"  method="post" action="addprocess.php">
               
               <img  id="blah" src="#" alt="Take Picture!" width="50%" />
               

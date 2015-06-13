@@ -21,7 +21,7 @@ $$(document).on('pageInit', function (e) {
   		$(".swipebox").swipebox();
 		$(".videocontainer").fitVids();
 		
-		$("#ContactForm").validate({
+		$("#ADDForm").validate({
 		submitHandler: function(form) {
 		ajaxADD(form);
 		return false;
