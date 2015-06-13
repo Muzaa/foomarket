@@ -15,7 +15,7 @@
      
      <div id="pages_maincontent">
       
-      <h2 class="page_subtitle">People Trend Near You</h2><br><br>
+      <h2 class="page_subtitle">Rental Trend Near You</h2><br><br>
                
        
    
@@ -37,7 +37,79 @@
       
       ?>
       
+       <div class="clear"></div><Br><Br>
+        <h2 class="page_subtitle">Market Analysis</h2><br>
       
+      <style>
+        #footable td
+        {
+          border:1px solid black;
+          text-align:center;
+          
+        }
+      </style>
+      <table width='100%' id='footable' border='1'>
+
+<thead>
+<tr>
+
+
+
+<th>
+Item Description
+</th>
+
+<th>
+Popularity
+</th>
+
+<th>
+Purchase Price
+</th>
+
+<th>
+Average Price / Hour
+</th>
+
+
+
+</thead>
+
+      
+            <?php
+            
+            $qid = mysql_query("select * from inventory a , user b where a.userid = b.uid order by a.rate DESC");
+
+
+$gotornot = mysql_num_rows ( $qid );
+
+	      while($data = mysql_fetch_array($qid))
+	      {
+                ?>
+              <tr>  
+                <td>
+<?php echo $data['Description'] ?>
+</td>
+
+<td>
+<?php echo rand(1,100);?>%
+</td>
+
+<td>
+$<?php echo rand(100,500);?>
+</td>
+
+<td>
+$<?php echo $data['Rate'] ?>
+</td>
+              </tr>
+
+                <?php
+              }
+  
+      
+      ?>
+      </table>
     </div>
   </div>
 </div>

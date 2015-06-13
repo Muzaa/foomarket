@@ -75,14 +75,14 @@
                           
                           <a href="find.php" class="swiper_read_more">swipe to see more</a>                      </div>
                       <div class="swiper-slide">
-                          <span>I NEED HELP!</span>
+                          <span>I NEED SOMETHING!</span>
                           <span class="subtitle">Rent something now!</span>
                           
                           
                           <a href="find.php" class="swiper_read_more">Start Searching</a>                      </div>
                       <div class="swiper-slide">
                           <span>I WANNA MAKE <br>SOME CASH!</span>
-                          <span class="subtitle">Advertize your stuff.</span>
+                          <span class="subtitle">Advertise your stuff.</span>
                           <a href="add.php" class="swiper_read_more">Create Inventory</a>                      </div>
                     </div>
                     <div class="swiper-pagination"></div>

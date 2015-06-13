@@ -35,6 +35,13 @@
             <input type="text" name="Rate" value="" placeholder="how much per hour?" class="form_input required" />
             <label>Deposit (if any) [USD]:</label>
             <input type="text" name="Deposit" value="0" class="form_input required" />
+            
+            <label>You Remaining Credits:</label>
+            <div class="clear"></div>
+            <div style='background-color:#ffb5a2; padding: 10px;'>
+            <span style="font-size:30pt;padding:5px:"><b>50</span> <span style="font-size:20pt;padding:5px:"> Credits</b> Remaining. <b>(Top-up Your Credit)</b></span><br>
+            <b>1 Credit</b> will be deducted for each advertisment.
+            </div>
             <input type="submit" name="submit" class="form_submit" id="submit" value="Send" />
             <label id="loader" style="display:none;"><img src="images/loader.gif" alt="Loading..." id="LoadingGraphic" /></label>
             
