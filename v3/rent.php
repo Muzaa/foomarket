@@ -47,7 +47,7 @@ Deposit : $data[Deposit] USD
       <div class="clear"></div>
       <br>
 
-	<div class="call_button"><a onclick="window.location = 'whatsapp://send?text=Hello%2C%20World!'" >Contact Owner via Whatsapp! &rarr;</a></div>  <br>
+	<div class="call_button"><a onclick="window.location = 'whatsapp://send?text=Hi&abid=10'" >Contact Owner via Whatsapp! &rarr;</a></div>  <br>
           <div class="call_button"><a class='back' > &larr; Back</a></div>
 	  <br><br>
 	  <img src='tm.png'><br>
