@@ -18,7 +18,23 @@
               <img  id="blah" src="#" alt="Take Picture!" width="50%" />
               
                     <input type="file" id="imgInp"  name="userfile" accept="image/*;capture=camera">
-                      
+                            <script>
+        function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('#blah').attr('src', e.target.result);
+        }
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+$("#imgInp").change(function(){
+    readURL(this);
+});
+       </script> 
             <label>Description:</label>
             <input type="text" name="description" value="" class="form_input required" />
             <label>Rate per hour [USD]:</label>
