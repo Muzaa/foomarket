@@ -62,45 +62,36 @@
           </div>
         </div>
 
-        
-          <!-- start -->
-          
         <div class="pages navbar-through toolbar-through">
+
           <div data-page="index" class="page homepage">
             <div class="page-content">
 
                   <!-- Slider -->
-                  <div class="swiper-container swiper-init" data-effect="coverflow" data-pagination=".swiper-pagination">
-                    <div class="swiper-wrapper">
-                    
-                      <div class="swiper-slide">
-                          <span>THE <br /> CREATIVE</span>
-                          <span class="subtitle">mobile app solution</span>
-                          <a href="about.html" class="swiper_read_more">swipe to see more</a>                      </div>
-                      <div class="swiper-slide">
-                          <span>WITH <br />BEAUTIFUL</span>
-                          <span class="subtitle">multipurpose designs</span>
-                          <a href="features.html" class="swiper_read_more">see all features</a>                      </div>
-                      <div class="swiper-slide">
-                          <span>READY <br /> FOR APPS</span>
-                          <span class="subtitle">web and native</span>
-                          <a href="#" class="swiper_read_more open-panel">start navigating</a>                      </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                  </div>
+            <div class="content-block">
+      <h4>Login</h4>
+            <div class="loginform">
+            <form id="LoginForm" method="post">
+            <label>Username:</label>
+            <input type="text" name="Username" value="" class="form_input required" />
+            <label>Password:</label>
+            <input type="password" name="Password" value="" class="form_input required" />
+            <input type="submit" name="submit" class="form_submit" id="submit" value="Login" />
+            </form>
+            </div>
+     
+    </div>
+            
             </div>
           </div>
         </div>
-          <!-- footer --> 
-        
-        
         <!-- Bottom Toolbar-->
         <div class="toolbar">
               <div class="toolbar-inner">
               <ul class="toolbar_icons icons_4row">
-              <li><a href="#" data-popup=".popup-login" class="open-popup"><img src="images/icons/white/user.png" alt="" title="" /></a></li>
+              <li><a href="#" data-popup=".popup-login" class="open-popup"  ><img src="images/icons/white/user.png" alt="" title="" /></a></li>
               <li><a href="features.html"><img src="images/icons/white/settings.png" alt="" title="" /></a></li>
-              <li><a href="photos.html" rel="external" data-ajax="false"><img src="images/icons/white/photos.png" alt="" title="" /></a></li>
+              <li><a href="photos.html"><img src="images/icons/white/photos.png" alt="" title="" /></a></li>
               <li><a href="#" data-popup=".popup-social" class="open-popup"><img src="images/icons/white/heart.png" alt="" title="" /></a></li>
               </ul>
               </div>  
@@ -109,6 +100,8 @@
 
       </div>
     </div>
+    
+    
     
     <!-- About Popup -->
     <div class="popup popup-login">
@@ -126,6 +119,11 @@
       <div class="close_popup_button_gray"><a href="#" class="close-popup">Close</a></div>
     </div>
     </div>
+    
+
+                
+    
+    
     <!-- Services Popup -->
     <div class="popup popup-social">
     <div class="content-block">
@@ -151,14 +149,7 @@
 <script type="text/javascript" src="js/jquery.fitvids.js"></script>
 <script type="text/javascript" src="js/email.js"></script>
 
-<script>
-    $( document ).ready(function() {
- $.mobile.changePage("otherPage.html");
-});
-
-
-
-
-</script>
+ 
+    
   </body>
 </html>
