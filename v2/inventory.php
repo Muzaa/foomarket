@@ -44,7 +44,7 @@ include 'header.php';
 		Rate / Hour
 		</td>
 				<td>
-		<input type="text" name="Rate" value="">
+		<input type="text" name="Rate" value="5">
 		</td>
 </tr>
 <tr>
@@ -53,7 +53,7 @@ include 'header.php';
 	 Deposit
 		</td>
 		<td>
-		<input type="text" name="Deposit" value="">
+		<input type="text" name="Deposit" value="10">
 		</td>
 </tr>
 
