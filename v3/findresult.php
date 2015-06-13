@@ -97,7 +97,7 @@ if(empty($gotornot))
 {
 	?>
 	  <li>
-		<center>Sorry no <?php echo $Description?> to rent, would you like to buy it? (<b><a onclick="window.location = 'redirect.php?q=<?php echo $Description?>';" href='#'>Find at mudah.my</a></b>) </center>
+		<center>Sorry no <?php echo $Description?> to rent, would you like to buy it?<br> (<b><a onclick="window.location = 'redirect.php?q=<?php echo $Description?>';" href='#'>Find at mudah.my</a></b>) </center>
 	  </li>
 	
 	<?php
