@@ -13,13 +13,18 @@
 
             <h2 id="Note"></h2>
             <div class="contactform">
-            <form class="cmxform" id="ContactForm" method="post" action="">
+            <form class="cmxform" id="additem" enctype="multipart/form-data"  method="post" action="addprocess.php">
+              
+              <img  id="blah" src="#" alt="Take Picture!" width="50%" />
+              
+                    <input type="file" id="imgInp"  name="userfile" accept="image/*;capture=camera">
+                      
             <label>Description:</label>
-            <input type="text" name="ContactName" id="ContactName" value="" class="form_input required" />
-            <label>Rate per hour:</label>
-            <input type="text" name="ContactEmail" id="ContactEmail" value="" class="form_input required email" />
-            <label>Deposit (if any):</label>
-            <textarea name="ContactComment" id="ContactComment" class="form_textarea textarea required" rows="" cols=""></textarea>
+            <input type="text" name="description" value="" class="form_input required" />
+            <label>Rate per hour [USD]:</label>
+            <input type="text" name="rate" value="" placeholder="how much per hour?" class="form_input required" />
+            <label>Deposit (if any) [USD]:</label>
+            <input type="text" name="deposit" value="0" class="form_input required" />
             <input type="submit" name="submit" class="form_submit" id="submit" value="Send" />
             <label id="loader" style="display:none;"><img src="images/loader.gif" alt="Loading..." id="LoadingGraphic" /></label>
             </form>

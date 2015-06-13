@@ -23,7 +23,7 @@ $$(document).on('pageInit', function (e) {
 		
 		$("#ContactForm").validate({
 		submitHandler: function(form) {
-		ajaxContact(form);
+		ajaxADD(form);
 		return false;
 		}
 		});

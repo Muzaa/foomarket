@@ -1,12 +1,15 @@
-function ajaxContact(theForm) {
+function ajaxADD(theForm)
+{
+	//add new inventory stuff.
 var $ = jQuery;
 $('#loader').fadeIn();
 var formData = $(theForm).serialize(),
 note = $('#Note');
 $.ajax({
 type: "POST",
-url: "send.php",
+url: "addprocess.php",
 data: formData,
+
 success: function(response) {
 if ( note.height() ) {			
 note.fadeIn('fast', function() { $(this).hide(); });
@@ -23,7 +26,7 @@ if (response === 'success') {
 var result = '';
 var c = '';
 if (response === 'success') { 
-	result = 'Your message has been sent. Thank you!';
+	result = 'Your item has been submited. Thank you!';
 	c = 'success';
 } else {
 	result = response;
