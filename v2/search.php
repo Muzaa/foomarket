@@ -85,7 +85,7 @@ Option
 
 $i=$row+1;
 while($data=mysql_fetch_array($qid)):
-$mark = true;
+$mark = true;   
 ?>
 
 <tr>
@@ -115,7 +115,7 @@ $mark = true;
 </td>
 
 <td>
-<a href="rent.php?id=$data[iid]">Click To Rent This Item</a>
+<a href="rent.php?id=<?php echo $data['iid'] ?>">Click To Rent This Item</a>
 </td>
 
 </tr>
@@ -123,6 +123,9 @@ $mark = true;
 <?php
 $i++;
 endwhile;
+$_SESSION['iid'] = $data['iid'];
+
+$_SESSION['owner'] = $data['uid'];
 
 ?>
 
