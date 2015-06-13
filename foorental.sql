@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jun 13, 2015 at 08:49 AM
+-- Generation Time: Jun 13, 2015 at 12:45 PM
 -- Server version: 5.1.36
 -- PHP Version: 5.3.0
 
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `inventory` (
   `latitude` decimal(9,6) NOT NULL,
   `longitude` decimal(9,6) NOT NULL,
   PRIMARY KEY (`iid`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
 
 --
 -- Dumping data for table `inventory`
@@ -99,6 +99,7 @@ CREATE TABLE IF NOT EXISTS `rating` (
 
 CREATE TABLE IF NOT EXISTS `rental` (
   `rid` int(11) NOT NULL AUTO_INCREMENT,
+  `Date` datetime NOT NULL,
   `Description` varchar(255) NOT NULL,
   `InventoryID` int(11) NOT NULL,
   `Owner` int(11) NOT NULL,
@@ -113,9 +114,9 @@ CREATE TABLE IF NOT EXISTS `rental` (
 -- Dumping data for table `rental`
 --
 
-INSERT INTO `rental` (`rid`, `Description`, `InventoryID`, `Owner`, `Renter`, `Duration`, `Photoproof`, `Comment`) VALUES
-(1, 'Rent for 1 day', 1, 1, 2, '1', '', '-'),
-(2, 'test desc', 4, 3, 2, '3', '', 'test ');
+INSERT INTO `rental` (`rid`, `Date`, `Description`, `InventoryID`, `Owner`, `Renter`, `Duration`, `Photoproof`, `Comment`) VALUES
+(1, '2015-06-13 00:00:00', 'Rent for 1 day', 1, 1, 2, '1', '', '-'),
+(2, '2015-06-13 00:00:00', 'test desc', 4, 3, 2, '3', '', 'test ');
 
 -- --------------------------------------------------------
 
