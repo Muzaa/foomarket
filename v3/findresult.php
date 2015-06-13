@@ -79,7 +79,7 @@ $gotornot = mysql_num_rows ( $qid );
 	  }
 	   ?>
 	   <br>
-		Item Distance : <?php echo round($meters ,2) ?> Meters
+		Item Distance : <span style='font-size:10pt'><?php echo round($meters ,2) ?> Meters</span>
 	  </p>
           <span style='font-size:20pt'>$<?php echo $fooitem[$key]['Rate'];?> per hour </span> <a style='float:right' href="rent.php?id=<?php echo $key;?>" class="button_small">Click to rent!
 	  

@@ -21,7 +21,7 @@
     
             <input type="text" name="foostuff" id="foostuff" placeholder="Search here.." value="" class="form_input required" />
             
-            <input type="button" id="foofind" class="form_submit" id="submit" value="Find nearest item &rarr;" />
+            <input type="button" id="foofind" class="form_submit" id="submit" value="Find Item &rarr;" />
 
             <label id="loader" style="display:none;"><img src="images/loader.gif" alt="Loading..." id="LoadingGraphic" /></label>
            
