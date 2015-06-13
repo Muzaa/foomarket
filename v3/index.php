@@ -35,7 +35,7 @@
                   <li class="search-icon"><a href="find.php" class="close-panel">Find and Rent!</a></li>
                   <li class="photos-icon"><a href="add.php" class="close-panel">Rent Your Stuff</a></li>
                   <li class="cart-icon"><a href="buy.php" class="close-panel">Buy Good Stuff</a></li>
-                  <li class="blog-icon"><a href="blog.html" class="close-panel">Messaging</a></li>
+                  <li class="blog-icon"><a href="#" onclick="window.location = 'whatsapp://send?text=Hi&abid=10'"  class="close-panel">Messaging</a></li>
                   <li class="logout-icon"><a href="contact.html" class="close-panel">Logout</a></li>
                 </ul>
                 
@@ -100,7 +100,7 @@
               <li><a href="find.php"><img src="images/icons/white/search.png" alt="" title="" /></a></li>
               <li><a href="add.php"><img src="images/icons/white/photos.png" alt="" title="" /></a></li>
               <li><a href="buy.php" rel="external" data-ajax="false"><img src="images/icons/white/cart.png" alt="" title="" /></a></li>
-              <li><a href="#" data-popup=".popup-social" class="open-popup"><img src="images/icons/white/blog.png" alt="" title="" /></a></li>
+              <li><a href="#" onclick="window.location = 'whatsapp://send?text=Hi&abid=10'" ><img src="images/icons/white/blog.png" alt="" title="" /></a></li>
               </ul>
               </div>  
         </div>
