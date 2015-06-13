@@ -22,24 +22,25 @@
               <img  id="blah" src="images/icons/black/photos.png" alt="Take Picture!"  />
               
                     <input type="file" id="imgInp"  name="userfile" accept="image/*;capture=camera">
-                      
-      
+                <div class="clear"></div>       
+      <img src='lawn.jpg' height='100px'>
         
               <input type="hidden" id="latadd" name="latadd" value="" class="form_input required" />
                 <input type="hidden" id="longadd" name="longadd" value="" class="form_input required" />
                              
                              
             <label>Description:</label>
-            <input type="text" name="Description" value="" class="form_input required" />
+            <input type="text" name="Description" value="Lawn Mower" class="form_input required" />
             <label>Rate per hour [USD]:</label>
             <input type="text" name="Rate" value="" placeholder="how much per hour?" class="form_input required" />
             <label>Deposit (if any) [USD]:</label>
-            <input type="text" name="Deposit" value="0" class="form_input required" />
+            <input type="text" name="Deposit" value="" class="form_input required" />
             
             <label>You Remaining Credits:</label>
             <div class="clear"></div>
             <div style='background-color:#ffb5a2; padding: 10px;'>
-            <span style="font-size:30pt;padding:5px:"><b>50</span> <span style="font-size:20pt;padding:5px:"> Credits</b> Remaining. <b>(Top-up Your Credit)</b></span><br>
+            <span style="font-size:30pt;padding:5px:"><b>50</span> <span style="font-size:20pt;padding:5px:"> Credits</b> Remaining. <b><br>
+            <a href="#" data-popup=".popup-social" class="open-popup" >(Top-up Your Credit)</a></b></span><br>
             <b>1 Credit</b> will be deducted for each advertisment.
             </div>
             <input type="submit" name="submit" class="form_submit" id="submit" value="Send" />

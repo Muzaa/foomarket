@@ -132,16 +132,15 @@
     <!-- Services Popup -->
     <div class="popup popup-social">
     <div class="content-block">
-      <h4>Social Share</h4>
-      <p>Share icons solution that allows you share and increase your social popularity.</p>
-      <ul class="social_share">
-      <li><a href="#"><img src="images/icons/white/twitter.png" alt="" title="" /></a></li>
-      <li><a href="#"><img src="images/icons/white/facebook.png" alt="" title="" /></a></li>
-      <li><a href="#"><img src="images/icons/white/googleplus.png" alt="" title="" /></a></li>
-      <li><a href="#"><img src="images/icons/white/dribbble.png" alt="" title="" /></a></li>
-      <li><a href="#"><img src="images/icons/white/linkedin.png" alt="" title="" /></a></li>
-      <li><a href="#"><img src="images/icons/white/pinterest.png" alt="" title="" /></a></li>
-      </ul>
+      <h4>Top Up Credit</h4>
+      <p>Choose Creadit Below :</p>
+      <center>
+        
+      <input type='radio'><span style='font-size:20pt'>200 Credit for $20 USD</span><Br>
+            <input type='radio'><span style='font-size:20pt'>300 Credit for $25 USD</span><Br>
+                  <input type='radio'><span style='font-size:20pt'>400 Credit for $30 USD</span><Br>
+                        <input type='radio'><span style='font-size:20pt'>500 Credit for $35 USD</span><Br>
+<img src='paypal.jpg'></center>
       <div class="close_popup_button"><a href="#" class="close-popup">Close</a></div>
     </div>
     </div>
