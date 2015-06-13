@@ -26,7 +26,11 @@ if(isset($_POST['Email']))
   <li>cc</li>
 </ul>
 
-
+<ul>
+  <li><a href="inventory.php">Insert Inventory</a></li>
+  <li>bb</li>  
+  <li>cc</li>
+</ul>
 
 
 <?php

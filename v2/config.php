@@ -4,6 +4,7 @@
  mysql_selectdb("foorental");
   // session_start();
 
-
+ session_start();
+ error_reporting(0);
  
 ?>

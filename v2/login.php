@@ -19,7 +19,7 @@ $qid = mysql_query($sql);
     {
       $_SESSION['Email'] = $data['Email']; 
       $_SESSION['Name'] = $data['Name'];  
-
+      $_SESSION['uid'] = $data['uid'];  
       
       header('location: index.php');
     }
