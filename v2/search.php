@@ -129,7 +129,6 @@ $_SESSION['owner'] = $data['userid'];
 
 endwhile;
 
-
 ?>
 
 </table>
