@@ -4,19 +4,19 @@
     
      <div class="navbarpages">
        <div class="navbar_home_link"><a href="index.html"><img src="images/icons/white/home.png" alt="" title="" /></a></div>
-       <div class="navbar_page_center">Rent Something</div>
+       <div class="navbar_page_center">Buy Stuff</div>
        <div class="menu_open_icon_white"><a href="#" class="open-panel"><img src="images/menu_open.png" alt="" title="" /></a></div>
      </div>
      
      <div id="pages_maincontent">
       
-      <h2 class="page_subtitle">Find something to rent.</h2>
+      <h2 class="page_subtitle">Find something to buy.</h2>
                   <div class="contactform">
             <form class="cmxform" id="ContactForm" method="post" action="">
     
             <input type="text" name="ContactName" id="ContactName" placeholder="Search here.." value="" class="form_input required" />
             
-            <input type="submit" name="submit" class="form_submit" id="submit" value="Find nearest item &rarr;" />
+            <input type="submit" name="submit" class="form_submit" id="submit" value="Find something &rarr;" />
             <input class="" type="hidden" name="to"  value="youremail@yourwebsite.com" />
             <input class="" type="hidden" name="subject" value="Contacf form message" />
             <label id="loader" style="display:none;"><img src="images/loader.gif" alt="Loading..." id="LoadingGraphic" /></label>
