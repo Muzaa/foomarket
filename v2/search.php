@@ -28,7 +28,7 @@ $page = $_GET['page'];
 $row = ($page-1) * 20;
 
 
-$qid = mysql_query("select * from inventory where userid != '$uid' AND Description like '%$Description%' order by Description limit $row,20");
+$qid = mysql_query("select * from inventory a , user b where a.userid = b.uid AND a.userid != '$uid' AND a.Description like '%$Description%' order by a.Description limit $row,20");
 
 ?>
 
@@ -56,6 +56,10 @@ No
 
 <th>
 Description
+</th>
+
+<th>
+Owner Name
 </th>
 
 <th>
@@ -96,6 +100,10 @@ $mark = true;
 
 <td>
 <?php echo $data['Description'] ?>
+</td>
+
+<td>
+<?php echo $data['Name'] ?>
 </td>
 
 <td>
