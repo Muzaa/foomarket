@@ -19,10 +19,21 @@ var mainView = myApp.addView('.view-main', {
 });
 $$(document).on('pageInit', function (e) {
     
-    
+
+    $('a.back').click(function(){
+        parent.history.back();
+        return false;
+    });
+
     
     $("#foofind").click(function(event){
                $('#fooresult').load('findresult.php?q=' +  encodeURIComponent($("#foostuff").val()) + "&lat=" + $("#Lat").val() + "&long=" + $("#Long").val() );
+            });
+    
+    
+        
+    $("#foofind2").click(function(event){
+               $('#fooresult').load('buyresult.php?q=' +  encodeURIComponent($("#foostuff").val()) + "&lat=" + $("#Lat").val() + "&long=" + $("#Long").val() );
             });
     
     

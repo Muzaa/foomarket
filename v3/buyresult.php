@@ -26,10 +26,10 @@ include "config.php";
 }
 
 
-$Description = $_GET['q'];
 
-$sqltrend = "INSERT INTO `trend` (`id`, `datetime`, `searchterm`, `lat`, `lng`) VALUES (NULL, NOW(), '$Description', '$_GET[lat]', '$_GET[long]');";
-mysql_query($sqltrend);
+
+
+$Description = $_GET['q'];
 
 $qid = mysql_query("select * from inventory a , user b where a.userid = b.uid AND a.Description like '%$Description%' order by a.rate DESC");
 
