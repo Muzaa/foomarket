@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
 <link rel="apple-touch-startup-image" href="images/apple-touch-startup-image-320x460.png" />
-<title>fooRental.com</title>
+<title>minio - mobile web app template</title>
 <link rel="stylesheet" href="css/framework7.css">
 <link rel="stylesheet" href="style.css">
 <link type="text/css" rel="stylesheet" href="css/swipebox.css" />
@@ -57,53 +57,41 @@
 
         <div class="navbar">
           <div class="navbar-inner">
-            <div class="left sliding"><div class="logo_title">fooRental.com</div></div>
+            <div class="left sliding"><div class="logo_title">minio</div></div>
             <div class="right menu_open_icon"><a href="#" data-panel="left" class="link icon-only open-panel"></a></div>
           </div>
         </div>
 
-        
-          <!-- start -->
-          
         <div class="pages navbar-through toolbar-through">
+
           <div data-page="index" class="page homepage">
             <div class="page-content">
 
                   <!-- Slider -->
-                  <div class="swiper-container swiper-init" data-effect="coverflow" data-pagination=".swiper-pagination">
-                    <div class="swiper-wrapper">
-                    
-                      <div class="swiper-slide">
-                          <span><br>fooRental.com</span>
-                          <span class="subtitle">Need a hand? <br> Earn extra cash!</span>
-                          
-                          <a href="about.html" class="swiper_read_more">swipe to see more</a>                      </div>
-                      <div class="swiper-slide">
-                          <span>I NEED HELP!</span>
-                          <span class="subtitle">Rent something now!</span>
-                          
-                          
-                          <a href="features.html" class="swiper_read_more">Start Searching</a>                      </div>
-                      <div class="swiper-slide">
-                          <span>I WANNA MAKE <br>SOME CASH!</span>
-                          <span class="subtitle">Advertize your stuff.</span>
-                          <a href="#" class="swiper_read_more open-panel">Create Inventory</a>                      </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                  </div>
+            <div class="content-block">
+      <h4>Login</h4>
+            <div class="loginform">
+            <form id="LoginForm" method="post">
+            <label>Username:</label>
+            <input type="text" name="Username" value="" class="form_input required" />
+            <label>Password:</label>
+            <input type="password" name="Password" value="" class="form_input required" />
+            <input type="submit" name="submit" class="form_submit" id="submit" value="Login" />
+            </form>
+            </div>
+     
+    </div>
+            
             </div>
           </div>
         </div>
-          <!-- footer --> 
-        
-        
         <!-- Bottom Toolbar-->
         <div class="toolbar">
               <div class="toolbar-inner">
               <ul class="toolbar_icons icons_4row">
-              <li><a href="#" data-popup=".popup-login" class="open-popup"><img src="images/icons/white/user.png" alt="" title="" /></a></li>
+              <li><a href="#" data-popup=".popup-login" class="open-popup"  ><img src="images/icons/white/user.png" alt="" title="" /></a></li>
               <li><a href="features.html"><img src="images/icons/white/settings.png" alt="" title="" /></a></li>
-              <li><a href="photos.html" rel="external" data-ajax="false"><img src="images/icons/white/photos.png" alt="" title="" /></a></li>
+              <li><a href="photos.html"><img src="images/icons/white/photos.png" alt="" title="" /></a></li>
               <li><a href="#" data-popup=".popup-social" class="open-popup"><img src="images/icons/white/heart.png" alt="" title="" /></a></li>
               </ul>
               </div>  
@@ -112,6 +100,8 @@
 
       </div>
     </div>
+    
+    
     
     <!-- About Popup -->
     <div class="popup popup-login">
@@ -129,6 +119,11 @@
       <div class="close_popup_button_gray"><a href="#" class="close-popup">Close</a></div>
     </div>
     </div>
+    
+
+                
+    
+    
     <!-- Services Popup -->
     <div class="popup popup-social">
     <div class="content-block">
@@ -154,14 +149,7 @@
 <script type="text/javascript" src="js/jquery.fitvids.js"></script>
 <script type="text/javascript" src="js/email.js"></script>
 
-<script>
-    $( document ).ready(function() {
- $.mobile.changePage("otherPage.html");
-});
-
-
-
-
-</script>
+ 
+    
   </body>
 </html>

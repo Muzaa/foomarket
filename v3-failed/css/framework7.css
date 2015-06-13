@@ -3564,7 +3564,7 @@ html.with-statusbar-overlay .popup.tablet-fullscreen {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 260px;
+  height: 240px;
   z-index: 11500;
   display: none;
   -webkit-transition-property: -webkit-transform;
@@ -3684,14 +3684,14 @@ html.ios-gt-6.pixel-ratio-3 .popover .picker-modal .toolbar:after {
 }
 .panel.panel-left.panel-cover {
   z-index: 6000;
-  left: -260px;
+  left: -240px;
 }
 .panel.panel-left.panel-reveal {
   left: 0;
 }
 .panel.panel-right.panel-cover {
   z-index: 6000;
-  right: -260px;
+  right: -240px;
 }
 .panel.panel-right.panel-reveal {
   right: 0;
@@ -3718,26 +3718,26 @@ body.with-panel-right-reveal .panel-overlay {
   display: block;
 }
 body.with-panel-left-reveal .views {
-  -webkit-transform: translate3d(260px, 0, 0);
-  transform: translate3d(260px, 0, 0);
+  -webkit-transform: translate3d(240px, 0, 0);
+  transform: translate3d(240px, 0, 0);
 }
 body.with-panel-left-reveal .panel-overlay {
-  margin-left: 260px;
+  margin-left: 240px;
 }
 body.with-panel-left-cover .panel-left {
-  -webkit-transform: translate3d(260px, 0, 0);
-  transform: translate3d(260px, 0, 0);
+  -webkit-transform: translate3d(240px, 0, 0);
+  transform: translate3d(240px, 0, 0);
 }
 body.with-panel-right-reveal .views {
-  -webkit-transform: translate3d(-260px, 0, 0);
-  transform: translate3d(-260px, 0, 0);
+  -webkit-transform: translate3d(-240px, 0, 0);
+  transform: translate3d(-240px, 0, 0);
 }
 body.with-panel-right-reveal .panel-overlay {
-  margin-left: -260px;
+  margin-left: -240px;
 }
 body.with-panel-right-cover .panel-right {
-  -webkit-transform: translate3d(-260px, 0, 0);
-  transform: translate3d(-260px, 0, 0);
+  -webkit-transform: translate3d(-240px, 0, 0);
+  transform: translate3d(-240px, 0, 0);
 }
 body.panel-closing .views {
   -webkit-transition-duration: 400ms;
@@ -4850,7 +4850,7 @@ body > .photo-browser .toolbar {
 /* === Columns Picker === */
 .picker-columns {
   width: 100%;
-  height: 260px;
+  height: 240px;
   z-index: 11500;
 }
 .picker-columns.picker-modal-inline,
