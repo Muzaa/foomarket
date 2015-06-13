@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jun 13, 2015 at 01:12 PM
+-- Generation Time: Jun 13, 2015 at 02:21 PM
 -- Server version: 5.1.36
 -- PHP Version: 5.3.0
 
@@ -108,7 +108,7 @@ CREATE TABLE IF NOT EXISTS `rental` (
   `Photoproof` blob NOT NULL,
   `Comment` varchar(255) NOT NULL,
   PRIMARY KEY (`rid`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `rental`
