@@ -122,10 +122,13 @@ $mark = true;
 
 <?php
 $i++;
-endwhile;
+
 $_SESSION['iid'] = $data['iid'];
 
-$_SESSION['owner'] = $data['uid'];
+$_SESSION['owner'] = $data['userid'];
+
+endwhile;
+
 
 ?>
 

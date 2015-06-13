@@ -60,8 +60,8 @@ include 'header.php';
 
 <tr>
 		<td colspan='2' align='right'>
-		<input type='button' onclick='history.go(-1)' value='Kembali'>   
-		<input type="submit" name="submit" value="Tambah">
+		<input type='button' onclick='history.go(-1)' value='Back'>   
+		<input type="submit" name="submit" value="Add">
 		</form>
 		</td>
 </tr>

@@ -12,7 +12,7 @@ if(!empty($_POST))
           `Duration` ,  `Comment`
           )
           VALUES (
-          NULL , NOW(), '', '$_SESSION[iid]', '$_SESSION[owner]', '$_SESSION[uid]', '', ''
+          NULL , Now(), '$_POST[Description]', '$_SESSION[iid]', '$_SESSION[owner]', '$_SESSION[uid]', '$_POST[Duration]', '$_POST[Comment]'
           )";
 
           echo $sql;
@@ -24,9 +24,47 @@ if(!empty($_POST))
  }
   
 
-
 ?>
+<h2> Rental</h2>
 
+<table width='100%'>
+<tr>
+		<td>
+		<form  method="POST" action="rent.php">
+
+		Description  
+		</td>
+		<td><input type="text" name="Description" value="">	
+		</td>
+
+</tr>
+<tr>
+		<td>
+		Duration
+		</td>
+				<td>
+		<input type="text" name="Duration" value="">
+		</td>
+</tr>
+<tr>
+
+		<td>
+	 Comment
+		</td>
+		<td>
+		<input type="text" name="Comment" value="">
+		</td>
+</tr>
+
+
+<tr>
+		<td colspan='2' align='right'>
+		<input type='button' onclick='history.go(-1)' value='Back'>   
+		<input type="submit" name="submit" value="Rent">
+		</form>
+		</td>
+</tr>
+</table>
 
 
 
