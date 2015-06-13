@@ -33,6 +33,9 @@ mysql_query($sqltrend);
 
 $qid = mysql_query("select * from inventory a , user b where a.userid = b.uid AND a.Description like '%$Description%' order by a.rate DESC");
 
+
+$gotornot = mysql_num_rows ( $qid );
+
 	      while($data = mysql_fetch_array($qid))
 	      {
 		
@@ -84,7 +87,19 @@ $qid = mysql_query("select * from inventory a , user b where a.userid = b.uid AN
           </div>
           </li>
   
+  
+  
   <?php
   
+}
+
+if(empty($gotornot))
+{
+	?>
+	  <li>
+		<center>Sorry no <?php echo $Description?> to rent, would you like to buy it? (<b><a onclick="window.location = 'redirect.php?q=<?php echo $Description?>';" href='#'>Find at mudah.my</a></b>) </center>
+	  </li>
+	
+	<?php
 }
   ?>
