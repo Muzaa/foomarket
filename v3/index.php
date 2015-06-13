@@ -138,14 +138,6 @@
 <script type="text/javascript" src="js/jquery.fitvids.js"></script>
 <script type="text/javascript" src="js/email.js"></script>
 
-<script>
-    $( document ).ready(function() {
- $.mobile.changePage("otherPage.html");
-});
 
-
-
-
-</script>
   </body>
 </html>

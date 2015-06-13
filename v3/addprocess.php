@@ -23,10 +23,10 @@ $uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
 
 if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
  // echo "File is valid, and was successfully uploaded.\n";
-  header ("location: index.html#!/addsuccess.php");
+  header ("location: index.php#!/addsuccess.php?id=1");
 } else {
   // echo "Upload failed";
-   header ("location: index.html#!/addfailed.php");
+   header ("location: index.php#!/addfailed.php");
 }
 /*
 echo "</p>";
@@ -35,6 +35,6 @@ echo 'Here is some more debugging info:';
 print_r($_FILES);
 print "</pre>";
 
-header ("location: index.html#!/addsuccess.php");
+header ("location: index.php#!/addsuccess.php");
 */
 ?> 

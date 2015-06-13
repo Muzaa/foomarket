@@ -3,7 +3,7 @@
     <div class="page-content">
     
      <div class="navbarpages">
-       <div class="navbar_home_link"><a href="index.html"><img src="images/icons/white/home.png" alt="" title="" /></a></div>
+       <div class="navbar_home_link"><a href="index.php"><img src="images/icons/white/home.png" alt="" title="" /></a></div>
        <div class="navbar_page_center">Contact</div>
        <div class="menu_open_icon_white"><a href="#" class="open-panel"><img src="images/menu_open.png" alt="" title="" /></a></div>
      </div>
@@ -14,7 +14,7 @@
          
             
 
-      <div class="call_button"><a href="index.html">Back to Home</a></div>    
+      <div class="call_button"><a href="index.php">Back to Home</a></div>    
       
       <div class="clear"></div>
       </div>

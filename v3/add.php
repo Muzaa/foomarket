@@ -3,7 +3,7 @@
     <div class="page-content">
     
      <div class="navbarpages">
-       <div class="navbar_home_link"><a href="index.html"><img src="images/icons/white/home.png" alt="" title="" /></a></div>
+       <div class="navbar_home_link"><a href="index.php"><img src="images/icons/white/home.png" alt="" title="" /></a></div>
        <div class="navbar_page_center">Contact</div>
        <div class="menu_open_icon_white"><a href="#" class="open-panel"><img src="images/menu_open.png" alt="" title="" /></a></div>
      </div>
@@ -15,7 +15,7 @@
             <div class="contactform">
             <form class="cmxform" id="add1" enctype="multipart/form-data"  method="post" action="addprocess.php">
               
-              <img  id="blah" src="#" alt="Take Picture!" width="50%" />
+              <img  id="blah" src="images/icons/black/photos.png" alt="Take Picture!"  />
               
                     <input type="file" id="imgInp"  name="userfile" accept="image/*;capture=camera">
                             <script>
@@ -32,6 +32,7 @@
 }
 
 $("#imgInp").change(function(){
+  alert("ok"),
     readURL(this);
 });
        </script> 
@@ -47,7 +48,7 @@ $("#imgInp").change(function(){
             </div>
             
 
-      <div class="call_button"><a href="index.html">Back to Home</a></div>    
+      <div class="call_button"><a href="index.php">Back to Home</a></div>    
       
       <div class="clear"></div>
       </div>
