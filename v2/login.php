@@ -1,17 +1,20 @@
 <?php
 include 'config.php';
 include 'header.php';
+session_start();
 
-
-   session_start();
-   
-   
 if(isset($_POST['Email']))
 {
-
-  
+ 
 $sql = "SELECT * FROM `user` WHERE Email = '$_POST[Email]' AND password = '$_POST[password]'";
+
+//echo $sql;
+//exit;
+
 $qid = mysql_query($sql);
+
+
+
     if($data = mysql_fetch_array($qid))
     {
       $_SESSION['Email'] = $data['Email']; 
@@ -23,29 +26,36 @@ $qid = mysql_query($sql);
     else
     {
        $error = "Invalid User OR Password";
+       
+                     echo ("<SCRIPT LANGUAGE='JavaScript'>
+            window.alert('Invalid User OR Password')
+            window.location.href='login.php';
+            </SCRIPT>");
+       
     }
-
-  
+ 
 }
 
 
 ?>
 
-    <div class="popup popup-login">
-    <div class="content-block">
+
       <h4>Login</h4>
             <div class="loginform">
-            <form id="LoginForm" method="post">
-            <label>Username:</label>
-            <input type="text" name="Username" value="" class="form_input required" />
+            <form data-ajax="false" action="login.php" method="post" data-role="form" >
+            <label>Email:</label>
+            <input type="text" name="Email" id="Email" value="" class="form_input required" />
             <label>Password:</label>
-            <input type="password" name="Password" value="" class="form_input required" />
+            <input type="password" id="password" name="password" value="" class="form_input required" />
             <input type="submit" name="submit" class="form_submit" id="submit" value="Login" />
+            
+            
             </form>
             </div>
+    <div ><a href="register.php">Register</a></div>
+    
       <div class="close_popup_button_gray"><a href="#" class="close-popup">Close</a></div>
-    </div>
-    </div>
+
 
     <?php
     include 'footer.php';

@@ -2,7 +2,7 @@
 
 include 'config.php';
 
-   session_start();
+ session_start();
    
    
 if(isset($_POST['Email']))
@@ -25,7 +25,7 @@ if(isset($_POST['Email']))
 
     else
     {
-        $sql = "INSERT INTO `foorental`.`user` (
+        $sql = "INSERT INTO `user` (
                 `uid` ,
                 `Name` ,
                 `Phone` ,
@@ -46,7 +46,7 @@ if(isset($_POST['Email']))
               
               echo ("<SCRIPT LANGUAGE='JavaScript'>
             window.alert('Succesfully Registered')
-            window.location.href='index.html';
+            window.location.href='index.php';
             </SCRIPT>");
         
         

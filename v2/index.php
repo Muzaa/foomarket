@@ -1,10 +1,24 @@
 <?php
 include 'config.php';
 include 'header.php';
+ session_start();
+ 
+if(isset($_POST['Email']))
+ {
+ 
+    header('location: login.php');
+ 
+ }
+ else
+ {
 ?>
 
 
-<h3>Welcome</h3>
+
+<h3>Welcome <?php echo $_SESSION['Name'] ?></h3>
+
+
+<p><a href="logout.php">Logout</a></p>
 
 <ul>
   <li>aa</li>
@@ -16,6 +30,8 @@ include 'header.php';
 
 
 <?php
+}
+
 include 'footer.php';
 ?>
 
