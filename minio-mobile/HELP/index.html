@@ -1,0 +1,309 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>minio mobile | web app template documentation</title>
+	<link rel="stylesheet" href="assets/screen.css" type="text/css" media="screen, projection">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700,900' rel='stylesheet' type='text/css'>
+<body>
+<div id="main_container">
+
+
+  <div id="header">
+  
+    <div class="header_left">
+    <h1>minio mobile</h1> 
+    <span>Documentation and HELP</span>
+    </div>
+  
+  	<div class="logo"><a href="index.html"><img src="assets/images/logo.png" alt="sindevo.com" title="sindevo" /></a></div>
+    
+  <div class="clear"></div>
+  </div><!-- End of Header-->
+  
+<div class="main_menu">
+<h2 id="toc">Table of Contents</h2>
+<ol class="enumar">
+<li><a href="#intro">Introduction</a>
+  <ol class="alpha">
+    <li><a href="#package">Package files content.</a></li>
+    <li><a href="#installing">HTML/CSS templates, definition and usage.</a></li>
+  </ol>
+</li>
+<li><a href="#usage">Different usage of this mobile template</a>
+  <ol class="alpha">
+    <li><a href="#website">Creating a mobile website, redirecting from your desktop website to the mobile one.</a></li>
+    <li><a href="#webapp">Creating a web app, difference between web app and native app.</a></li>
+    <li><a href="#nativeapp">Converting it into a native app.</a></li>
+  </ol>
+</li>
+<li><a href="#htmlStructure">Editing this template</a>
+  <ol class="alpha">
+<li><a href="#homepage">Home page structure</a></li>
+<li><a href="#secondary">Secondary pages</a></li>
+<li><a href="#blog">Blog section</a></li>
+<li><a href="#gallery">Photo Gallery</a></li>
+<li><a href="#contact">Contact Form</a></li>
+  </ol>
+</li>
+    
+<li><a href="#cssFiles">CSS files</a></li>
+<li><a href="#javascript">JavaScript files</a></li>
+
+<li><a href="#credits">Sources and Credits</a></li>
+</ol>
+</div>
+
+
+  <div class="headerinfo">
+        <div class="created_by">
+                <strong>Created: </strong><i>06 March 2015</i><br>
+                <strong>Last Updated: </strong><i>25 March 2015</i><br>
+                <strong>Current Version: </strong>1.1<br>
+        </div>	
+    
+        <div class="thankyou">
+        <p>Thank you for purchasing our item. If you have any questions that are beyond the scope of this help file, please feel free to email via our profile page</p>
+        <a href="http://themeforest.net/user/sindevo">Contact Us</a>
+        </div>
+  </div> 
+  
+  
+<div class="main_content">  
+
+
+<h3 id="intro" class="subtitle"><span>1</span> Introduction</h3>
+<p> Minio Mobile is a mobile HTML/CSS template that will help you create a mobile website, a mobile web app, or a native app (integrated with solutions like phonegap). The mobile template is using a flexible layout that will adapt any mobile resolution. Includes multiple pages and design elements that will help in creating any section of your website or app. The template uses Ajax and jQuery to load the pages dinamically, this will give a real app feel when navigating.</p>
+
+
+<h3 id="package" class="subtitle"><span>1.A</span> Package files content. - <a href="#toc">top ^</a></h3>
+<p>The package you downloaded from themeforest include the following structure: </p>
+<p> <img src="assets/images/package.jpg" alt="" title=""></p>
+<p>The main HTML file preview.html will open the preview page with all 3 mobile designs. The preview folder includes the files just for the preview page.</p>
+<p>There are 3 main designs available for this template:</p>
+<p>1. The main design found inside the &quot;main&quot; folder.</p>
+<p>2. The circles design found inside the &quot;circles&quot; folder.</p>
+<p>3. The minimal design found inside the &quot;minimal&quot; folder.</p>
+<p>Once you decided which design you will use for your website/app just copy the files inside one of this folders. The main file of you website will be the index.html file found in each folder of this 3 designs. Below you can see the files included in one design, for example the &quot;main&quot; folder one. Where index.html is the main home page.</p>
+<p> <img src="assets/images/package2.jpg" alt="" title=""></p>
+<h3 id="installing" class="subtitle"><span>1.B</span> HTML/CSS templates, definition and usage. - <a href="#toc">top ^</a></h3>
+<p>A HTML/CSS Template is a pre-designed layout that will help you build a final website. HTML ( HyperText Markup Language) is the basic coding to create web pages. CSS stands for Cascading Style Sheets and it's used to define and style the HTML elements. </p>
+<p>To install a HTML/CSS template requires just to copy the template files on your webserver. This can be done using your hosting provider custom interface or a FTP (File Transfer Protocol) software. Our recommandation is <a href="https://filezilla-project.org/">FileZilla</a>.</p>
+<p>A regular HTML/CSS template does NOT include a CMS (Content Management System) to edit/add content of the pages. All content is edited using a HTML editor. HTML editors can be found as free and paid editors. Some modern HTML editors  have included a DESIGN view mode of the code, making it easier for templates to be edited. Regular ones will let you edit the content only from the code mode, meaning you will need to have a <strong>basic HTML coding knowledge</strong>.</p>
+<h3 id="usage" class="subtitle"><span>2</span> Different usage of this mobile template - <a href="#toc">top ^</a></h3>
+<p>This mobile template can be used to create a mobile website, a web app, and a native app. Depending on your needs you can use this layout to create the desired final product. Below we will try to describe each one of the final product you can create.</p>
+<h3 id="website" class="subtitle"><span>2.A</span>Creating a mobile website, redirecting from your desktop website to the mobile one. - <a href="#toc">top ^</a></h3>
+<p>You can use this template to create a mobile version of your website. Considering that you main desktop website is not responsive or you want a separate mobile version of it, minio is a perfect solution to do that.</p>
+<p>To createa a separate mobile version of your website using this template will require to create a subdomain or a subfolder of your domain  (<strong>mobile.yourwebsite.com</strong> or <strong>m.yourwebsite.com</strong>) where the main files will be copied.</p>
+<p>To redirect users to your new created mobile website you will need to use a redirection code. First you need to add a mobile detection code, and then redirect mobile users to the mobile url.</p>
+<p><strong>For more information about mobile detection and redirection check <a target="_blank" href="http://detectmobilebrowsers.com/">THIS WEBSITE</a>.</strong></p>
+<h3 id="webapp" class="subtitle"><span>2.B</span>Creating a web app, difference between web app and native app. - <a href="#toc">top ^</a></h3>
+<p>You can use this template to create a web app. Web app are simple web application than run from a web server. Web apps are visible through a web browser and function just like a normal website.</p>
+<p>Minio offers the feel of a web app because of his Ajax and jQuery effects and navigation.</p>
+<p>The difference between web and native apps is that native apps are developed essentially for one particular mobile device and is installed directly onto the device itself. And are available only on app stores. Web apps can be used on any mobile device, and do not need to be downloaded first.</p>
+<p>Below you can see how your web app icon will look saved on iPhone home screen. Saving it like this will give an option to open it directly in full screen mode. </p>
+<p> <img src="assets/images/code2.jpg" alt="" title=""></p>
+<p>To modify the icon and loading screen images see the code in the header section of index.html file</p>
+<pre>&lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot;&gt;<br>
+  &lt;meta name=&quot;apple-mobile-web-app-status-bar-style&quot; content=&quot;black&quot;&gt;<br>
+  &lt;link rel=&quot;apple-touch-icon&quot; href=&quot;images/apple-touch-icon.png&quot; /&gt;<br>
+  &lt;link rel=&quot;apple-touch-startup-image&quot; href=&quot;images/apple-touch-startup-image-320x460.png&quot; /&gt;</pre>
+  <p>Images are located inside images folder.</p>
+  <p> <img src="assets/images/apple-touch-icon.png" alt="" title=""></p>
+  <p> <img src="assets/images/apple-touch-startup-image-320x460.png" alt="" title=""></p>
+  <h3 id="nativeapp" class="subtitle"><span>2.C</span>Converting it into a native app. - <a href="#toc">top ^</a></h3>
+<p>To convert this template into a native app you will need to use solutions like phonegap.</p>
+<p>&quot;Easily create apps using the web technologies you know and love: <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>
+. 
+</p>
+<p>PhoneGap is a free and open source framework that allows you to create   mobile apps using standardized web APIs for the platforms you care   about. &quot;</p>
+<p>More about phonegap on their <a href="http://phonegap.com/" target="_blank">WEBSITE</a></p>
+<h3 id="htmlStructure" class="subtitle"><span>3</span> Editing this template - <a href="#toc">top ^</a></h3>
+<h2>EDITING THIS TEMPLATE REQUIRES BASIC HTML/CSS AND JAVASCRIPT KNOWLEDGE. IF YOU DON'T HAVE A BASIC KNOWLEDGE OF THIS WE RECOMMEND HIRE A WEBDESIGNER OR LOOK FOR A FREELANCER ON ENVATO STUDIO.</h2>
+<p><strong>EDITING THIS MOBILE TEMPLATE DO NOT REQUIRE A SERVER. YOU CAN EDIT IT USING A LOCAL HTML EDITOR SOFTWARE. ONLY TESTING IT WILL REQUIRE TO BE UPLOADED TO A SERVER. IN ORDER TO LOAD IT WITH YOUR MOBILE.</strong></p>
+<p>To edit this HTML template you will need a <strong>HTML editor</strong>. Even Notepad will do the job, but a dedicated HTML editor will work better in arranging the code structure. HTML editors are softwares that allow code editing. Some HTML editors have included a DESIGN mode, which will allow you to see the interface of the page you are editing. Editor can be found FREE and PREMIUM on the WEB.
+
+<h3 id="homepage" class="subtitle"><span>3.A</span> Home page structure - <a href="#toc">top ^</a></h3>
+<p>The main page of this template is index.html file. This is the home page of your website, the first page the browser will open when users will access your website.
+<p>Home page structure starts with LEFT and RIGHT panels. This panels can be accessible by clicking one link or a button. Below you will see how this panels are looking when opened.
+<p> <img src="assets/images/left-panel.png" alt="" title=""><img src="assets/images/main.png" alt="" title=""><img src="assets/images/right-panel.png" alt="" title=""></p>
+<p>The HTML code of this panels is:</p>
+<pre>    &lt;div class=&quot;panel panel-left panel-cover&quot;&gt;<br>              &lt;nav class=&quot;list-nav&quot;&gt;<br>                &lt;ul&gt;<br>                  &lt;li class=&quot;home-icon&quot;&gt;&lt;a href=&quot;index.html&quot; class=&quot;close-panel&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;<br>                  &lt;li class=&quot;about-icon&quot;&gt;&lt;a href=&quot;about.html&quot; class=&quot;close-panel&quot;&gt;About&lt;/a&gt;&lt;/li&gt;<br>                  &lt;li class=&quot;features-icon&quot;&gt;&lt;a href=&quot;features.html&quot; class=&quot;close-panel&quot;&gt;Features&lt;/a&gt;&lt;/li&gt;<br>                  &lt;li class=&quot;photos-icon&quot;&gt;&lt;a href=&quot;photos.html&quot; class=&quot;close-panel&quot;&gt;Gallery&lt;/a&gt;&lt;/li&gt;<br>                  &lt;li class=&quot;video-icon&quot;&gt;&lt;a href=&quot;videos.html&quot; class=&quot;close-panel&quot;&gt;Videos&lt;/a&gt;&lt;/li&gt;<br>                  &lt;li class=&quot;blog-icon&quot;&gt;&lt;a href=&quot;blog.html&quot; class=&quot;close-panel&quot;&gt;Blog&lt;/a&gt;&lt;/li&gt;<br>                  &lt;li class=&quot;contact-icon&quot;&gt;&lt;a href=&quot;contact.html&quot; class=&quot;close-panel&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;<br>                &lt;/ul&gt;<br>              &lt;/nav&gt;  <br>    &lt;/div&gt;</pre>
+<pre>    &lt;div class=&quot;panel panel-right panel-cover&quot;&gt;<br>      &lt;div class=&quot;user_login_info&quot;&gt;<br>        &lt;h2&gt;Hi, username&lt;/h2&gt;<br>        &lt;p&gt;Edit your account settings&lt;/p&gt;<br>              &lt;nav class=&quot;list-nav-small&quot;&gt;<br>                &lt;ul&gt;<br>                  &lt;li class=&quot;about-icon&quot;&gt;&lt;a href=&quot;about.html&quot; class=&quot;close-panel&quot;&gt;Profile&lt;/a&gt;&lt;/li&gt;<br>                  &lt;li class=&quot;tools-icon&quot;&gt;&lt;a href=&quot;features.html&quot; class=&quot;close-panel&quot;&gt;Settings&lt;/a&gt;&lt;/li&gt;<br>                  &lt;li class=&quot;lock-icon&quot;&gt;&lt;a href=&quot;features.html&quot; class=&quot;close-panel&quot;&gt;Account&lt;/a&gt;&lt;/li&gt;<br>                  &lt;li class=&quot;envelope-icon&quot;&gt;&lt;a href=&quot;features.html&quot; class=&quot;close-panel&quot;&gt;Messages&lt;/a&gt;&lt;/li&gt;<br>                  &lt;li class=&quot;heart-icon&quot;&gt;&lt;a href=&quot;features.html&quot; class=&quot;close-panel&quot;&gt;Favorites&lt;/a&gt;&lt;/li&gt;<br>                  &lt;li class=&quot;download-icon&quot;&gt;&lt;a href=&quot;features.html&quot; class=&quot;close-panel&quot;&gt;Downloads&lt;/a&gt;&lt;/li&gt;<br>                  &lt;li class=&quot;logout-icon&quot;&gt;&lt;a href=&quot;index.html&quot; class=&quot;close-panel&quot;&gt;Logout&lt;/a&gt;&lt;/li&gt;<br>                &lt;/ul&gt;<br>              &lt;/nav&gt;<br>      &lt;/div&gt;<br>    &lt;/div&gt;</pre>
+
+<p>To open one of this panels you need to setup your link or button like:
+<pre>&lt;a href=&quot;#&quot; data-panel=&quot;left&quot; class=&quot;open-panel&quot;&gt;&lt;/a&gt;</pre>
+<pre>&lt;a href=&quot;#&quot; data-panel=&quot;right&quot; class=&quot;open-panel&quot;&gt;&lt;/a&gt; </pre>
+<p>The home page structure continues with the header navigation:</p>
+<p>
+<img src="assets/images/header.jpg" alt="" title=""></p>
+<p>In the header you can add your main website title / logo and a menu button for example, that will open the left panel.</p>
+<pre> &lt;div class=&quot;navbar&quot;&gt;
+ &lt;div class=&quot;navbar-inner&quot;&gt;
+ &lt;div class=&quot;left sliding&quot;&gt;&lt;div class=&quot;logo_title&quot;&gt;minio&lt;/div&gt;&lt;/div&gt;
+ &lt;div class=&quot;right menu_open_icon&quot;&gt;&lt;a href=&quot;#&quot; data-panel=&quot;left&quot; class=&quot;link icon-only open-panel&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt; </pre>
+<p>The slider is the center section of the main page. Here you can add important titles from your website.<pre>                  &lt;!-- Slider --&gt;<br>                  &lt;div class=&quot;swiper-container swiper-init&quot; data-effect=&quot;coverflow&quot; data-pagination=&quot;.swiper-pagination&quot;&gt;<br>                    &lt;div class=&quot;swiper-wrapper&quot;&gt;<br>                    <br>                      &lt;div class=&quot;swiper-slide&quot;&gt;<br>                          &lt;span&gt;THE &lt;br /&gt; CREATIVE&lt;/span&gt;<br>                          &lt;span class=&quot;subtitle&quot;&gt;mobile app solution&lt;/span&gt;<br>                          &lt;a href=&quot;about.html&quot; class=&quot;swiper_read_more&quot;&gt;swipe to see more&lt;/a&gt;                      &lt;/div&gt;<br>                      &lt;div class=&quot;swiper-slide&quot;&gt;<br>                          &lt;span&gt;WITH &lt;br /&gt;BEAUTIFUL&lt;/span&gt;<br>                          &lt;span class=&quot;subtitle&quot;&gt;multipurpose designs&lt;/span&gt;<br>                          &lt;a href=&quot;features.html&quot; class=&quot;swiper_read_more&quot;&gt;see all features&lt;/a&gt;                      &lt;/div&gt;<br>                      &lt;div class=&quot;swiper-slide&quot;&gt;<br>                          &lt;span&gt;READY &lt;br /&gt; FOR APPS&lt;/span&gt;<br>                          &lt;span class=&quot;subtitle&quot;&gt;web and native&lt;/span&gt;<br>                          &lt;a href=&quot;#&quot; class=&quot;swiper_read_more open-panel&quot;&gt;start navigating&lt;/a&gt;                      &lt;/div&gt;<br>                    &lt;/div&gt;<br>                    &lt;div class=&quot;swiper-pagination&quot;&gt;&lt;/div&gt;<br>                  &lt;/div&gt;</pre>
+<p>At the bottom of the home page is the toolbar. Here you can add important links / icons to your main website pages.</p>
+<p><img src="assets/images/bottom.jpg" alt="" title="">
+    </p>
+</p>
+<pre>        &lt;div class=&quot;toolbar&quot;&gt;<br>              &lt;div class=&quot;toolbar-inner&quot;&gt;<br>              &lt;ul class=&quot;toolbar_icons icons_4row&quot;&gt;<br>              &lt;li&gt;&lt;a href=&quot;#&quot; data-popup=&quot;.popup-login&quot; class=&quot;open-popup&quot;&gt;&lt;img src=&quot;images/icons/white/user.png&quot; alt=&quot;&quot; title=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;<br>              &lt;li&gt;&lt;a href=&quot;features.html&quot;&gt;&lt;img src=&quot;images/icons/white/settings.png&quot; alt=&quot;&quot; title=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;<br>              &lt;li&gt;&lt;a href=&quot;photos.html&quot;&gt;&lt;img src=&quot;images/icons/white/photos.png&quot; alt=&quot;&quot; title=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;<br>              &lt;li&gt;&lt;a href=&quot;#&quot; data-popup=&quot;.popup-social&quot; class=&quot;open-popup&quot;&gt;&lt;img src=&quot;images/icons/white/heart.png&quot; alt=&quot;&quot; title=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;<br>              &lt;/ul&gt;<br>              &lt;/div&gt;  <br>        &lt;/div&gt;</pre>
+<p>In the toolbar we have added links to open popup sliding sections. Like a login form, and a social sharing section.</p>
+<p> <img src="assets/images/login.png" alt="" title=""><img src="assets/images/social.png" alt="" title=""></p>
+<p>To open a popup you need to setup your link like:</p>
+<pre>&lt;a href=&quot;#&quot; data-popup=&quot;.popup-login&quot; class=&quot;open-popup&quot;&gt;.....&lt;/a&gt;</pre>
+
+<p>The HTML code of the login form ection  is:
+<pre>
+ &lt;div class=&quot;popup popup-login&quot;&gt;
+ &lt;div class=&quot;content-block&quot;&gt;
+ &lt;h4&gt;Login&lt;/h4&gt;
+ &lt;div class=&quot;loginform&quot;&gt;
+ &lt;form id=&quot;LoginForm&quot; method=&quot;post&quot;&gt;
+ &lt;label&gt;Username:&lt;/label&gt;
+ &lt;input type=&quot;text&quot; name=&quot;Username&quot; value=&quot;&quot; class=&quot;form_input required&quot; /&gt;
+ &lt;label&gt;Password:&lt;/label&gt;
+ &lt;input type=&quot;password&quot; name=&quot;Password&quot; value=&quot;&quot; class=&quot;form_input required&quot; /&gt;
+ &lt;input type=&quot;submit&quot; name=&quot;submit&quot; class=&quot;form_submit&quot; id=&quot;submit&quot; value=&quot;Login&quot; /&gt;
+ &lt;/form&gt;
+ &lt;/div&gt;
+ &lt;div class=&quot;close_popup_button_gray&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;close-popup&quot;&gt;Close&lt;/a&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;</pre>
+<p>And for the social sharing:<pre> &lt;div class=&quot;popup popup-social&quot;&gt;
+ &lt;div class=&quot;content-block&quot;&gt;
+ &lt;h4&gt;Social Share&lt;/h4&gt;
+ &lt;p&gt;Share icons solution that allows you share and increase your social popularity.&lt;/p&gt;
+ &lt;ul class=&quot;social_share&quot;&gt;
+ &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/icons/white/twitter.png&quot; alt=&quot;&quot; title=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/icons/white/facebook.png&quot; alt=&quot;&quot; title=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/icons/white/googleplus.png&quot; alt=&quot;&quot; title=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/icons/white/dribbble.png&quot; alt=&quot;&quot; title=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/icons/white/linkedin.png&quot; alt=&quot;&quot; title=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/icons/white/pinterest.png&quot; alt=&quot;&quot; title=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;div class=&quot;close_popup_button&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;close-popup&quot;&gt;Close&lt;/a&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;</pre>
+<p>&nbsp;</p>
+<h3 id="secondary" class="subtitle"><span>3.B</span> Secondary pages - <a href="#toc">top ^</a></h3>
+<p>The structure of the secondary pages is different from the home page. In the secondary pages the layout starts with div class=&quot;pages&quot;. The rest of the header HTML elements are missing. Styles, javascript code is only added on home page.</p>
+<p> <img src="assets/images/about.png" alt="" title=""><img src="assets/images/news.png" alt="" title=""><img src="assets/images/features.png" alt="" title=""></p>
+<p>First element on a secondary page is the header.</p>
+<pre>     &lt;div class=&quot;navbarpages&quot;&gt;<br>       &lt;div class=&quot;navbar_home_link&quot;&gt;&lt;a href=&quot;index.html&quot;&gt;&lt;img src=&quot;images/icons/white/home.png&quot; alt=&quot;&quot; title=&quot;&quot; /&gt;&lt;/a&gt;&lt;/div&gt;<br>       &lt;div class=&quot;navbar_page_center&quot;&gt;About&lt;/div&gt;<br>       &lt;div class=&quot;menu_open_icon_white&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;open-panel&quot;&gt;&lt;img src=&quot;images/menu_open.png&quot; alt=&quot;&quot; title=&quot;&quot; /&gt;&lt;/a&gt;&lt;/div&gt;<br>     &lt;/div&gt;</pre>
+<p>In the header you can add the page title, a back to Home link, and a button to open the menu from the left panel.</p>
+<p>The structure continues with the center content of any page. Inside the pages maincontent DIV you can add all the page content.</p>
+<pre>&lt;div id=&quot;pages_maincontent&quot;&gt;
+&lt;/div&gt;</pre>
+<h3 id="blog" class="subtitle"><span>2.C</span> Blog section - <a href="#toc">top ^</a></h3>   
+<p>The Blog section is a static news page. All posts in this section must be manually added. To create this news section dinamically will require some programming code and a database. There is also a details page included blog-single.html which is the single blog page of one post. </p>
+<p> <img src="assets/images/news.png" alt="" title=""></p>
+<p>The HTML code of a blog post:</p>
+<pre>                &lt;li class=&quot;swipeout&quot;&gt;<br>                  &lt;div class=&quot;swipeout-content item-content&quot;&gt;<br>                    &lt;div class=&quot;post_entry&quot;&gt;<br>                        &lt;div class=&quot;post_thumb&quot;&gt;&lt;img src=&quot;images/photos/photo8.jpg&quot; alt=&quot;&quot; title=&quot;&quot; /&gt;&lt;/div&gt;<br>                        &lt;div class=&quot;post_details&quot;&gt;<br>                        &lt;h2&gt;&lt;a href=&quot;blog-single.html&quot;&gt;Design is not just what it looks like and feels like.&lt;/a&gt;&lt;/h2&gt;<br>                        &lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.&lt;/p&gt;<br>                        &lt;span class=&quot;post_date&quot;&gt;24.02.2015&lt;/span&gt;<br>                        &lt;span class=&quot;post_author&quot;&gt;by &lt;a href=&quot;#&quot;&gt;admin&lt;/a&gt;&lt;/span&gt;<br>                        &lt;span class=&quot;post_comments&quot;&gt;&lt;a href=&quot;#&quot;&gt;0&lt;/a&gt;&lt;/span&gt;<br>                        &lt;/div&gt;<br>                        &lt;div class=&quot;post_swipe&quot;&gt;&lt;img src=&quot;images/swipe_more.png&quot; alt=&quot;&quot; title=&quot;&quot; /&gt;&lt;/div&gt;<br>                    &lt;/div&gt;<br>                  &lt;/div&gt;<br>                  &lt;div class=&quot;swipeout-actions-right&quot;&gt;<br>                    &lt;a href=&quot;#&quot; class=&quot;action1 open-popup&quot; data-popup=&quot;.popup-social&quot;&gt;&lt;img src=&quot;images/icons/white/heart.png&quot; alt=&quot;&quot; title=&quot;&quot; /&gt;&lt;/a&gt;<br>                  &lt;/div&gt;<br>                &lt;/li&gt;</pre>
+<p>Each post listed have a hidden section which can be revealed by touch-swiping the post content. This way you can add a cool share feature on this section.</p>
+<pre>                  &lt;div class=&quot;swipeout-actions-right&quot;&gt;<br>                    &lt;a href=&quot;#&quot; class=&quot;action1 open-popup&quot; data-popup=&quot;.popup-social&quot;&gt;&lt;img src=&quot;images/icons/white/heart.png&quot; alt=&quot;&quot; title=&quot;&quot; /&gt;&lt;/a&gt;<br>                  &lt;/div&gt;</pre>
+<p>At the bottom of all posts list is a button which clicked will load more posts.</p>
+<pre>&lt;div id=&quot;loadMore&quot;&gt;Load more posts&lt;/div&gt;</pre>
+<p>To edit the number os posts to show see the javascript file inside the &quot;js&quot; folder, called my-app.js. And the code to edit is x=3; from this function:</p>
+<pre>		$(&quot;.posts li&quot;).hide();	<br>		size_li = $(&quot;.posts li&quot;).size();<br>		x=3;<br>		$('.posts li:lt('+x+')').show();<br>		$('#loadMore').click(function () {<br>			x= (x+1 &lt;= size_li) ? x+1 : size_li;<br>			$('.posts li:lt('+x+')').show();<br>			if(x == size_li){<br>				$('#loadMore').hide();<br>				$('#showLess').show();<br>			}<br>		});</pre>
+
+<h3 id="gallery" class="subtitle"><span>3.C</span> Photo Gallery - <a href="#toc">top ^</a></h3>
+<p>Using this template you can create a photo gallery web app. </p>
+<p> <img src="assets/images/gallery.png" alt="" title=""></p>
+<p>The gallery page content HTML code is:</p>
+<pre>              &lt;div class=&quot;gallery_switch&quot;&gt;        <br>                &lt;a href=&quot;#&quot; id=&quot;view13&quot; class=&quot;switcher active&quot;&gt;&lt;img src=&quot;images/switch_13_active.png&quot; alt=&quot;Grid&quot;&gt;&lt;/a&gt;<br>                &lt;a href=&quot;#&quot; id=&quot;view12&quot; class=&quot;switcher&quot;&gt;&lt;img src=&quot;images/switch_12.png&quot; alt=&quot;Grid&quot;&gt;&lt;/a&gt;<br>                &lt;a href=&quot;#&quot; id=&quot;view11&quot; class=&quot;switcher&quot;&gt;&lt;img src=&quot;images/switch_11.png&quot; alt=&quot;List&quot;&gt;&lt;/a&gt;<br>              &lt;/div&gt;<br>      <br>      <br>                &lt;ul id=&quot;photoslist&quot; class=&quot;photo_gallery_13&quot;&gt;<br>                &lt;li&gt;&lt;a rel=&quot;gallery-3&quot; href=&quot;images/photos/photo1.jpg&quot; title=&quot;Photo title&quot; class=&quot;swipebox&quot;&gt;&lt;img src=&quot;images/photos/photo1.jpg&quot; alt=&quot;image&quot;/&gt;&lt;/a&gt;&lt;/li&gt;<br>                &lt;li&gt;&lt;a rel=&quot;gallery-3&quot; href=&quot;images/photos/photo2.jpg&quot; title=&quot;Photo title&quot; class=&quot;swipebox&quot;&gt;&lt;img src=&quot;images/photos/photo2.jpg&quot; alt=&quot;image&quot;/&gt;&lt;/a&gt;&lt;/li&gt;<br>                &lt;li&gt;&lt;a rel=&quot;gallery-3&quot; href=&quot;images/photos/photo3.jpg&quot; title=&quot;Photo title&quot; class=&quot;swipebox&quot;&gt;&lt;img src=&quot;images/photos/photo3.jpg&quot; alt=&quot;image&quot;/&gt;&lt;/a&gt;&lt;/li&gt;<br>                &lt;li&gt;&lt;a rel=&quot;gallery-3&quot; href=&quot;images/photos/photo4.jpg&quot; title=&quot;Photo title&quot; class=&quot;swipebox&quot;&gt;&lt;img src=&quot;images/photos/photo4.jpg&quot; alt=&quot;image&quot;/&gt;&lt;/a&gt;&lt;/li&gt;<br>                &lt;li&gt;&lt;a rel=&quot;gallery-3&quot; href=&quot;images/photos/photo5.jpg&quot; title=&quot;Photo title&quot; class=&quot;swipebox&quot;&gt;&lt;img src=&quot;images/photos/photo5.jpg&quot; alt=&quot;image&quot;/&gt;&lt;/a&gt;&lt;/li&gt;<br>                &lt;li&gt;&lt;a rel=&quot;gallery-3&quot; href=&quot;images/photos/photo6.jpg&quot; title=&quot;Photo title&quot; class=&quot;swipebox&quot;&gt;&lt;img src=&quot;images/photos/photo6.jpg&quot; alt=&quot;image&quot;/&gt;&lt;/a&gt;&lt;/li&gt;<br>                &lt;li&gt;&lt;a rel=&quot;gallery-3&quot; href=&quot;images/photos/photo7.jpg&quot; title=&quot;Photo title&quot; class=&quot;swipebox&quot;&gt;&lt;img src=&quot;images/photos/photo7.jpg&quot; alt=&quot;image&quot;/&gt;&lt;/a&gt;&lt;/li&gt;<br>                &lt;li&gt;&lt;a rel=&quot;gallery-3&quot; href=&quot;images/photos/photo8.jpg&quot; title=&quot;Photo title&quot; class=&quot;swipebox&quot;&gt;&lt;img src=&quot;images/photos/photo8.jpg&quot; alt=&quot;image&quot;/&gt;&lt;/a&gt;&lt;/li&gt;<br>                &lt;li&gt;&lt;a rel=&quot;gallery-3&quot; href=&quot;images/photos/photo9.jpg&quot; title=&quot;Photo title&quot; class=&quot;swipebox&quot;&gt;&lt;img src=&quot;images/photos/photo9.jpg&quot; alt=&quot;image&quot;/&gt;&lt;/a&gt;&lt;/li&gt;<br>                &lt;li&gt;&lt;a rel=&quot;gallery-3&quot; href=&quot;images/photos/photo10.jpg&quot; title=&quot;Photo title&quot; class=&quot;swipebox&quot;&gt;&lt;img src=&quot;images/photos/photo10.jpg&quot; alt=&quot;image&quot;/&gt;&lt;/a&gt;&lt;/li&gt;<br>                &lt;li&gt;&lt;a rel=&quot;gallery-3&quot; href=&quot;images/photos/photo11.jpg&quot; title=&quot;Photo title&quot; class=&quot;swipebox&quot;&gt;&lt;img src=&quot;images/photos/photo11.jpg&quot; alt=&quot;image&quot;/&gt;&lt;/a&gt;&lt;/li&gt;<br>                &lt;li&gt;&lt;a rel=&quot;gallery-3&quot; href=&quot;images/photos/photo12.jpg&quot; title=&quot;Photo title&quot; class=&quot;swipebox&quot;&gt;&lt;img src=&quot;images/photos/photo12.jpg&quot; alt=&quot;image&quot;/&gt;&lt;/a&gt;&lt;/li&gt;<br>                &lt;li&gt;&lt;a rel=&quot;gallery-3&quot; href=&quot;images/photos/photo13.jpg&quot; title=&quot;Photo title&quot; class=&quot;swipebox&quot;&gt;&lt;img src=&quot;images/photos/photo13.jpg&quot; alt=&quot;image&quot;/&gt;&lt;/a&gt;&lt;/li&gt;<br>                &lt;li&gt;&lt;a rel=&quot;gallery-3&quot; href=&quot;images/photos/photo14.jpg&quot; title=&quot;Photo title&quot; class=&quot;swipebox&quot;&gt;&lt;img src=&quot;images/photos/photo14.jpg&quot; alt=&quot;image&quot;/&gt;&lt;/a&gt;&lt;/li&gt;<br>                &lt;li&gt;&lt;a rel=&quot;gallery-3&quot; href=&quot;images/photos/photo15.jpg&quot; title=&quot;Photo title&quot; class=&quot;swipebox&quot;&gt;&lt;img src=&quot;images/photos/photo15.jpg&quot; alt=&quot;image&quot;/&gt;&lt;/a&gt;&lt;/li&gt;<br>                &lt;div class=&quot;clearleft&quot;&gt;&lt;/div&gt;<br>                &lt;/ul&gt;</pre>
+
+<p>To add a new photo just copy a line of code and add the new image source</p>
+<pre>&lt;li&gt;&lt;a rel=&quot;gallery-3&quot; href=&quot;images/photos/photo1.jpg&quot; title=&quot;Photo title&quot; class=&quot;swipebox&quot;&gt;&lt;img src=&quot;images/photos/photo1.jpg&quot; alt=&quot;image&quot;/&gt;&lt;/a&gt;&lt;/li&gt;</pre>
+<h3 id="contact" class="subtitle"><span>3.D</span> Contact page - <a href="#toc">top ^</a></h3>
+<p>The template includes a functional contact form. </p>
+<p> <img src="assets/images/contact.png" alt="" title=""></p>
+<p>The HTML code of the form is:</p>
+<pre>            &lt;div class=&quot;contactform&quot;&gt;<br>            &lt;form class=&quot;cmxform&quot; id=&quot;ContactForm&quot; method=&quot;post&quot; action=&quot;&quot;&gt;<br>            &lt;label&gt;Name:&lt;/label&gt;<br>            &lt;input type=&quot;text&quot; name=&quot;ContactName&quot; id=&quot;ContactName&quot; value=&quot;&quot; class=&quot;form_input required&quot; /&gt;<br>            &lt;label&gt;Email:&lt;/label&gt;<br>            &lt;input type=&quot;text&quot; name=&quot;ContactEmail&quot; id=&quot;ContactEmail&quot; value=&quot;&quot; class=&quot;form_input required email&quot; /&gt;<br>            &lt;label&gt;Message:&lt;/label&gt;<br>            &lt;textarea name=&quot;ContactComment&quot; id=&quot;ContactComment&quot; class=&quot;form_textarea textarea required&quot; rows=&quot;&quot; cols=&quot;&quot;&gt;&lt;/textarea&gt;<br>            &lt;input type=&quot;submit&quot; name=&quot;submit&quot; class=&quot;form_submit&quot; id=&quot;submit&quot; value=&quot;Send&quot; /&gt;<br>            &lt;input class=&quot;&quot; type=&quot;hidden&quot; name=&quot;to&quot;  value=&quot;youremail@yourwebsite.com&quot; /&gt;<br>            &lt;input class=&quot;&quot; type=&quot;hidden&quot; name=&quot;subject&quot; value=&quot;Contacf form message&quot; /&gt;<br>            &lt;label id=&quot;loader&quot; style=&quot;display:none;&quot;&gt;&lt;img src=&quot;images/loader.gif&quot; alt=&quot;Loading...&quot; id=&quot;LoadingGraphic&quot; /&gt;&lt;/label&gt;<br>            &lt;/form&gt;<br>            &lt;/div&gt;</pre>
+<p>To edit the email you want to receive the messages just edit the line:</p>
+<pre>&lt;input class=&quot;&quot; type=&quot;hidden&quot; name=&quot;to&quot;  value=&quot;youremail@yourwebsite.com&quot; /&gt;</pre>
+<p>&nbsp;</p>
+<h3 id="cssFiles" class="subtitle"><span>4</span> CSS Files - <a href="#toc">top ^</a></h3>
+
+<p>The template is using for each design 1 main CSS file and 3 secondary ones.</p>
+<p>1. The general css file is style.css loaded in each index file</p>
+<p><strong>&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot;/&gt;</strong></p>
+<p>At the top of the style.css file there is a &quot;Table of Contents&quot; list that will guide through the CSS code.</p>
+<pre>1. RESET
+   2. GENERAL
+   3. CUSTOM BUTTONS
+   4. LEFT AND RIGHT SLIDE PANELS
+ 4-1. SIDE NAVIGATION
+ 5. TOP NAVIGATION BAR AND FOOTER TOOLBAR
+ 5-1. TOP NAVIGATION AND HEADER
+ 5-2. FOOTER TOOLBAR
+ 6. PAGES LAYOUT
+ 7. HOME SWIPER
+ 8. LISTS
+ 9. POPUPS
+ 10. PHOTO GALLERY
+ 11. BLOG LAYOUT
+ 12. FORMS
+ 12-1. CONTACT FORM
+ 12-2. LOGIN FORM
+ 12-3. COMMENT FORM
+ 13. TABS &amp; ACCORDION
+ 14. MEDIA QUERIES
+ - @media screen and (max-width: 480px)</pre>
+<p>The template uses a custom google web font.</p>
+<p>In style.css the font is defined in the body section</p>
+<pre>body {
+   font-family: 'Source Sans Pro', sans-serif;
+   }</pre>
+<p>And loaded in the header section of the main index.html file</p>
+<pre>&lt;link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700,900' rel='stylesheet' type='text/css'&gt;</pre>
+
+<p>2. The secondary CSS files found inside the CSS folder.</p>
+<p>framework7.css file is the script CSS we are using to create the main functionality of the pages. WE RECOMMEND NOT TO EDIT THIS.</p>
+<p>reset.css is a general reseting code for browsing.</p>
+<p>swipebox.css is the CSS of the photo gallery section. </p>
+<h3 id="javascript" class="subtitle"><span>5</span> JavaScript Files - <a href="#toc">top ^</a></h3>
+
+
+<p>The template includes more javascript files which are loaded at the end of each index file</p>
+<pre>&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.10.1.min.js&quot;&gt;&lt;/script&gt;
+   &lt;script src=&quot;js/jquery.validate.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+   &lt;script type=&quot;text/javascript&quot; src=&quot;js/framework7.min.js&quot;&gt;&lt;/script&gt;
+   &lt;script type=&quot;text/javascript&quot; src=&quot;js/my-app.js&quot;&gt;&lt;/script&gt;
+   &lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.swipebox.js&quot;&gt;&lt;/script&gt;
+   &lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.fitvids.js&quot;&gt;&lt;/script&gt;
+   &lt;script type=&quot;text/javascript&quot; src=&quot;js/email.js&quot;&gt;&lt;/script&gt;</pre>
+<p>1. <strong>&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.10.1.min.js&quot;&gt;&lt;/script&gt;</strong></p>
+<p>jQuery general code. Version 1.10.1</p>
+<p>2.<strong>&lt;script src=&quot;js/jquery.validate.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</strong></p>
+<p><strong>&lt;script type=&quot;text/javascript&quot; src=&quot;js/email.js&quot;&gt;&lt;/script&gt;</strong></p>
+<p>Validation and sending functions for the contact form</p>
+<p>3.<strong>&lt;script type=&quot;text/javascript&quot; src=&quot;js/framework7.min.js&quot;&gt;&lt;/script&gt;</strong></p>
+<p>Main core functions for the pages and layout</p>
+<p>4.<strong>&lt;script type=&quot;text/javascript&quot; src=&quot;js/my-app.js&quot;&gt;&lt;/script&gt;</strong></p>
+<p>The custom functions of the template.</p>
+<p>All pages custom functions are added here. For example tabs, toogles and the rest of the custom code needed on a secondary page.</p>
+<p>5. <strong>&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.swipebox.js&quot;&gt;&lt;/script&gt;</strong></p>
+<p>Photo Gallery custom function.</p>
+<p>6.<strong>&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.fitvids.js&quot;&gt;&lt;/script&gt;</strong></p>
+<p>Functions to make videos responsive.</p>
+<h3 id="credits" class="subtitle"><span>6</span> Sources and Credits - <a href="#toc">top ^</a></h3>
+
+<ul>
+    <li>jQuery - from http://jquery.com/</li>
+    <li>Framework7 - http://www.idangero.us/framework7/</li>
+    <li>Swipebox - http://brutaldesign.github.io/swipebox/</li>
+    <li>Fitvidsjs - http://fitvidsjs.com/</li>
+    <li>Free comercial icons - http://www.elegantthemes.com/blog/freebie-of-the-week/free-line-style-icons</li>
+    <li>Demo photos - unsplash.com</li>
+</ul>
+
+
+<p><a href="#toc">Go To Table of Contents</a></p>
+
+<hr class="space">
+</div>
+</div><!-- end div .container -->
+</body>
+</html>

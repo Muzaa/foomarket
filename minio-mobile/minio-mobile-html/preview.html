@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>minio - mobile web app template</title>
+<meta name="author" content="sindevo.com">
+<meta name="description" content="web app mobile template">
+<link rel="stylesheet" href="preview/preview.css">
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700,900' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="main_content">
+
+
+        <div class="left_content">
+            <h1>minio</h1>
+            <span class="description">creative mobile template</span>
+            <p>Minio helps you to create a mobile website, a mobile web app, and integrated with solutions like phonegap, a real native app.</p>
+            <a href="https://www.youtube.com/watch?v=MCajxLL0iLE" target="_blank" class="video_button">see how it works on iPhone</a>
+            <h2>Load another design</h2>
+            <ul class="designs_list">
+              <li><a href="#" id="main"><span>01. main</span> <img src="preview/images/main.png" alt="" title="" /></a></li>
+              <li><a href="#" id="circles"><span>02. circles</span> <img src="preview/images/circles.png" alt="" title="" /></a></li>
+              <li><a href="#" id="minimal"><span>03. minimal</span> <img src="preview/images/minimal.png" alt="" title="" /></a></li>
+            </ul>
+        </div>
+        
+        <div class="iphone_bg">
+        	<div class="mobile_wrap">
+            <iframe id="frame" frameborder="no" border="0" scrolling="no" width="320px" height="568px;"></iframe> 
+            </div>
+        </div>
+        
+        
+        <div class="right_content">
+            <div class="swipe_to_navigate">Swipe/Touch to navigate</div>
+            <h3>Test it with your mobile</h3>
+            <img src="preview/images/qrcode.png" alt="" title="" />
+            <small>http://sindevo.com/minio/main/</small>
+            <h3>Main features:</h3>
+            <ul class="preview_list">
+              <li>Responsive layout</li>
+              <li>Ajax pages navigation</li>
+              <li>Multiple designs</li>
+              <li>Photos and videos sections</li>
+              <li>Login and social sharing panels</li>
+              <li>Forms, tabs, toogles and many more page elements</li>
+            </ul>
+        </div> 
+        
+        
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+var $ = jQuery.noConflict(); 
+$(document).ready(function () {
+$("#frame").attr("src", "main/index.html");
+
+$("#main").click(function () { 
+	  $("#frame").attr("src", "main/index.html");
+}); 
+$("#circles").click(function () { 
+	  $("#frame").attr("src", "circles/index.html");
+});
+$("#minimal").click(function () { 
+	  $("#frame").attr("src", "minimal/index.html");
+});
+
+});
+</script>  
+</body>
+</html>
