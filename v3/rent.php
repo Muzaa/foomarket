@@ -46,7 +46,7 @@ Deposit : $data[Deposit] USD
       <br>
       <div class="clear"></div>
       <br>
-        
+        <a href="intent://send/0123456789#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end"> Whats APP! </a>
 	<div class="call_button"><a href='confirm.php?id=<?php echo $data['iid']?>' >View feedback &rarr;</a></div>  <br>
           <div class="call_button"><a class='back' > &larr; Back</a></div>
 	  <br><br>

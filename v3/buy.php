@@ -15,25 +15,30 @@
      
      <div id="pages_maincontent">
       
-      <h2 class="page_subtitle">Search People Trend</h2>
-                  <div class="contactform">
+      <h2 class="page_subtitle">People Trend Near You</h2><br><br>
+               
        
-    
-            <input type="text" name="foostuff" id="foostuff" placeholder="Search here.." value="" class="form_input required" />
-            
-            <input type="button" id="foofind2" class="form_submit" id="submit" value="Buy something &rarr;" />
-
-            <label id="loader" style="display:none;"><img src="images/loader.gif" alt="Loading..." id="LoadingGraphic" /></label>
-           
-            </div>
+   
       
-      <ul class="features_list_detailed" id="fooresult">
+      <?php
+      //simple concept of the idea.
+      $sql = "SELECT count(1),`searchterm` FROM `trend` GROUP BY searchterm ORDER BY count(1) DESC  LIMIT 10";
       
+      $qid = mysql_query($sql);
       
+      while($data = mysql_fetch_array($qid))
+      {
+        
+        $random = rand(2,4);
+         $random = $random * 10;
+        echo "<span style='font-size:".$random."pt' ><a onclick=\"window.location = 'redirect.php?q=$data[searchterm]';\" href='#'>
+        ".ucfirst (strtolower($data['searchterm']))." </a> </span>";
+      }
       
-      </div>
+      ?>
       
       
     </div>
   </div>
+</div>
 </div>
